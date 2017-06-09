@@ -1,7 +1,0 @@
-#gcc -shared dst/printf.o dst/write.o dst/lib.o dst/liba.o -o dst/lib_d.so
-#gcc -I src/include/ -shared src/lib/ex/printf.c src/lib/ex/write.asm src/lib/lib.c src/lib/liba.asm -o dst/lib_d.so
-ld -shared dst/printf.o dst/write.o dst/lib.o dst/liba.o -o src/temp/lib_d.so
-
-gcc src/temp/test1.c dst/lib_d.so -o src/temp/test_d
-
-
