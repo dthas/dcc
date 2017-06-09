@@ -1,0 +1,30 @@
+DCC - The C-like compiler
+Updated: Sat Oct  12 16:48:00 2013
+Version: 0.01
+
+WHAT IS DCC?
+
+DCC is a C-like compiler used in linux. It contains 3 parts, which is dcc, dnasm, dld_s. Dcc is used to translate c-like language into nasm-like language(*.c => *.asm). Dnasm, is another component , which is for tranlating nasm-like language to machine code(*.asm => *.o). Dld_s, is a static linker, which links all the *.o into an executable file with the ELF format. So far, DCC is only for x86 platform.
+
+DCC is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation; either version 2 of the License, or (at your option) any later version.
+
+WHERE CAN I GET MORE INFORMATION?  HOW DO I REPORT PROBLEMS?
+
+You can send emails to zhf.liang@outlook.com 
+
+How can I install dcc?
+
+1)extract compiler.tar
+
+2)execute compiler/dcc.sh
+
+by the way, you also can change the test case within compiler/dcc/src/temp/testcase/ as blow:
+
+1)cd compiler/dcc/src/temp
+
+2)cp testcase/test_add.c test1.c
+
+
+
+
+

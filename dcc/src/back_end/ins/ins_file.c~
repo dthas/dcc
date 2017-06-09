@@ -1,0 +1,150 @@
+//===========================================================================
+// ins_lib_t.c
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@hotmail.com>
+//
+//This file is part of DTAHS_DCC.
+//
+//DTAHS_DCC is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTAHS_DCC is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+
+#include	"dcc_global.h"
+#include	"dcc_type.h"
+#include	"dcc_symtbl.h"
+#include	<stdio.h>
+#include	"dcc_main.h"
+#include	"dcc_lex_char.h"
+#include	"dcc_lex_word.h"
+#include	"dcc_parse.h"
+#include	"dcc_seman.h"
+#include	"dcc_frame.h"
+#include	"dcc_ir.h"
+#include	"dcc_pasm.h"
+#include	"dcc_block.h"
+#include	"dcc_ins.h"
+#include	"dcc_prototype.h"
+
+#define	INS_DEBUG
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	f_pr_ins_main(FILE *foutput)
+{
+	f_pr_ins_file_process(icur_file, foutput);
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	f_pr_ins_file_process(struct ins_file *f, FILE *foutput)
+{
+	for(; f; f=f->tail)
+	{
+		f_pr_ins_stslist_process(f->stslist);
+	}
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	f_pr_ins_stslist_process(struct ins_stslist *stslist, FILE *foutput)
+{
+	for(; stslist; stslist=stslist->tail)
+	{
+		f_pr_ins_sts_process(stslist->sts);		
+	}	
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	f_pr_ins_sts_process(struct ins_sts  *sts, FILE *foutput)
+{
+	if(sts)
+	{
+		switch(sts->k)
+		{
+			case INS_LABEL:
+				f_pr_ins_labellist_process(sts->s.exp_sts.pexplist);
+				break;
+			case INS_EXP:
+				f_pr_ins_explist_process(sts->s.exp_sts.pexplist);
+				break;
+		}
+	}
+}
+
+
+//===========================================================================
+// f_pr_ins_labellist_process
+//===========================================================================
+PUBLIC	void	f_pr_ins_labellist_process(struct ins_explist *explist, FILE *foutput)
+{
+	printf("\n=====================================================================================\n");
+	printf("	New block:\n");
+	printf("=====================================================================================\n");
+
+	for(; explist; explist=explist->tail)
+	{
+		f_pr_ins_label_process(explist->exp);		
+	}
+}
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	f_pr_ins_explist_process(struct ins_explist *explist, FILE *foutput)
+{
+	for(; explist; explist=explist->tail)
+	{
+		if(explist->exp)
+		{		
+			f_pr_ins_exp_process(explist->exp);
+			//printf("\n");
+		}			
+	}
+}
+
+
+//===========================================================================
+// ins_exp_process
+//===========================================================================
+PUBLIC	void	f_pr_ins_exp_process(struct ins_exp *exp, FILE *foutput)
+{
+	for(; exp; exp=exp->tail)
+	{
+		if(exp->str)
+		{
+			printf("%s\n", exp->str);
+		}
+	}
+}
+
+//===========================================================================
+// ins_label_process
+//===========================================================================
+PUBLIC	void	f_pr_ins_label_process(struct ins_exp *exp, FILE *foutput)
+{
+
+	for(; exp; exp=exp->tail)
+	{
+		if(exp->str)
+		{
+			printf("%s:\n", exp->str);
+		}
+	}
+}
+
+
+

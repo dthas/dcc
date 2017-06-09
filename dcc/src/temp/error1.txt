@@ -1,0 +1,1514 @@
+--start dnasm--,2, src/temp/start.asm
+--pre start---
+--pre_lex_char_state_tab init---
+--pre end---
+--lex_char_state_tab init(beg)---
+--lex_char_state_tab init(end)---
+1::86::OP_L_BRACKET
+2::48::BITS
+3::55::CONST_DEC
+4::87::OP_R_BRACKET
+5::28::EXTERN
+6::52::IDENTIFIER
+7::27::GLOBAL
+8::52::IDENTIFIER
+9::86::OP_L_BRACKET
+10::43::SECTION
+11::52::IDENTIFIER
+12::87::OP_R_BRACKET
+13::52::IDENTIFIER
+14::78::OP_COLON
+15::17::MOV
+16::32::EBX
+17::79::OP_COMMA
+18::67::CONST_HEX
+19::17::MOV
+20::31::EAX
+21::79::OP_COMMA
+22::67::CONST_HEX
+23::29::PUSH
+24::32::EBX
+25::29::PUSH
+26::31::EAX
+27::19::CALL
+28::52::IDENTIFIER
+29::13::ADD
+30::36::ESP
+31::79::OP_COMMA
+32::67::CONST_HEX
+33::17::MOV
+34::32::EBX
+35::79::OP_COMMA
+36::67::CONST_HEX
+37::17::MOV
+38::31::EAX
+39::79::OP_COMMA
+40::67::CONST_HEX
+41::51::INT
+42::67::CONST_HEX
+43::88::PARSE_END
+	-- symtbl_init()  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+--parse_productiontab_init(beg)---
+--parse_productiontab_init(end)---
+	-- seman_init  -- 
+	-- init_typelist  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+	-- add_typelist(s)  -- 
+	-- add_typelist(e)  -- 
+
+
+	====================================================
+	 true_typeid|    type_id|   len(bytes)|       name|
+	----------------------------------------------------
+	           0|       NONE|            0|           |
+	          12|         DB|            1|         db|
+	           1|         DW|            2|         dw|
+	           2|         DD|            4|         dd|
+	           3|         DQ|            8|         dq|
+	           4|         DT|           16|         dt|
+	           5|         DY|           32|         dy|
+	           6|       RESB|            1|       resb|
+	           7|       RESW|            2|       resw|
+	           8|       RESQ|            4|       resq|
+	           9|       RESY|            8|       resy|
+	          44|       BYTE|            1|       byte|
+	          45|       WORD|            2|       word|
+	          46|      DWORD|            4|      dword|
+	====================================================
+	-- file_build  -- 
+==================================================================
+	ins_init
+==================================================================
+-- process begin --
+	-- translate_unit -- 
+	-- external_declaration -- 
+	-- primary_expression(1)  -- token=48
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- translate_unit_1 -- 
+	-- external_declaration -- 
+	-- declaration_list(1)  -- 
+	-- declaration(1) -- 
+	-- storage_class_specifier  -- 
+	-- symtbl_add_s()  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- declaration_list_1  -- 
+	-- declaration(1) -- 
+	-- storage_class_specifier  -- 
+	-- symtbl_add_s()  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- declaration_list_1  -- 
+	-- translate_unit_1 -- 
+	-- external_declaration -- 
+	-- primary_expression(1)  -- token=43
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- translate_unit_1 -- 
+	-- external_declaration -- 
+	-- statement_list  -- 
+	-- stslist_build  -- 
+	-- statement  -- 
+	-- statement_1  -- token=87
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- symtbl_add_s()  -- 
+	-- symtbl_validate()  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_label_exp_build  -- 
+	-- explist_build  -- 
+	-- ir_labelsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- mov_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=17
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- mov_sts(1)  -- 
+
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=79
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_movsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- mov_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=17
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- mov_sts(1)  -- 
+
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=79
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_movsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- push_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=29
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_pushsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- push_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=29
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_pushsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- call_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=19
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_callsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- add_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=13
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=79
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_addsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- mov_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=17
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- mov_sts(1)  -- 
+
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=79
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_movsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- mov_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=17
+
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- ir_var_exp_build  -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- mov_sts(1)  -- 
+
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=79
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_movsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- statement  -- 
+	-- statement_2  -- 
+	-- int_sts  -- 
+	-- explist_build  -- 
+	-- expression(s)  -- 
+
+	-- additive_expression  -- 
+	-- multiplicative_expression  -- 
+	-- primary_expression(1)  -- token=51
+
+	-- const_exp_build(s)  -- 
+	-- const_exp_build(e)  -- 
+	-- multiplicative_expression_1  -- 
+	-- additive_expression_1  -- 
+
+	-- explist_build  -- 
+	-- ir_add2explist  -- 
+	-- ir_intsts_build  -- 
+	-- stslist_build  -- 
+	-- ir_add2stslist  -- 
+	-- statement_list_1  -- 
+
+	-- file_build  -- 
+	-- ir_add2file  -- 
+	-- translate_unit_1 -- 
+-- process end --
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   26|         es|     0|           |     GLOBAL|      DWORD|   4|         es|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   20|        ebp|     0|           |     GLOBAL|      DWORD|   4|        ebp|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   25|         ds|     0|           |     GLOBAL|      DWORD|   4|         ds|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   24|         cs|     0|           |     GLOBAL|      DWORD|   4|         cs|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   29|       word|     0|           |     GLOBAL|       WORD|   2|       word|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    5|        EBP|     0|           |     GLOBAL|      DWORD|   4|        EBP|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   22|        esi|     0|           |     GLOBAL|      DWORD|   4|        esi|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   19|        edx|     0|           |     GLOBAL|      DWORD|   4|        edx|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   18|        ecx|     0|           |     GLOBAL|      DWORD|   4|        ecx|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   15|       BYTE|     0|           |     GLOBAL|       BYTE|   1|       BYTE|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   23|        edi|     0|           |     GLOBAL|      DWORD|   4|        edi|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   17|        ebx|     0|           |     GLOBAL|      DWORD|   4|        ebx|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    7|        ESI|     0|           |     GLOBAL|      DWORD|   4|        ESI|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    4|        EDX|     0|           |     GLOBAL|      DWORD|   4|        EDX|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   27|        eip|     0|           |     GLOBAL|      DWORD|   4|        eip|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   16|        eax|     0|           |     GLOBAL|      DWORD|   4|        eax|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    3|        ECX|     0|           |     GLOBAL|      DWORD|   4|        ECX|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    8|        EDI|     0|           |     GLOBAL|      DWORD|   4|        EDI|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    2|        EBX|     0|           |     GLOBAL|      DWORD|   4|        EBX|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   12|        EIP|     0|           |     GLOBAL|      DWORD|   4|        EIP|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    1|        EAX|     0|           |     GLOBAL|      DWORD|   4|        EAX|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   21|        esp|     0|           |     GLOBAL|      DWORD|   4|        esp|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   14|       WORD|     0|           |     GLOBAL|       WORD|   2|       WORD|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   33|     _start|     0|           |       NONE|       NONE|   0|           |
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   13|      DWORD|     0|           |     GLOBAL|      DWORD|   4|      DWORD|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   30|       byte|     0|           |     GLOBAL|       BYTE|   1|       byte|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   28|      dword|     0|           |     GLOBAL|      DWORD|   4|      dword|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   11|         ES|     0|           |     GLOBAL|      DWORD|   4|         ES|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   31|         bx|     0|           |     GLOBAL|       WORD|   2|         bx|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   10|         DS|     0|           |     GLOBAL|      DWORD|   4|         DS|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+   32|         L0|     0|           |     EXTERN|       NONE|   0|           |
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    6|        ESP|     0|           |     GLOBAL|      DWORD|   4|        ESP|
+=========================================================================================
+
+=========================================================================================
+   id|       name| val_i|      val_s|   type_scs|    type_ts| len|      label|       flag
+-----------------------------------------------------------------------------------------
+    9|         CS|     0|           |     GLOBAL|      DWORD|   4|         CS|
+=========================================================================================
+
+
+	====================================================
+	 true_typeid|    type_id|   len(bytes)|       name|
+	----------------------------------------------------
+	           0|       NONE|            0|           |
+	          12|         DB|            1|         db|
+	           1|         DW|            2|         dw|
+	           2|         DD|            4|         dd|
+	           3|         DQ|            8|         dq|
+	           4|         DT|           16|         dt|
+	           5|         DY|           32|         dy|
+	           6|       RESB|            1|       resb|
+	           7|       RESW|            2|       resw|
+	           8|       RESQ|            4|       resq|
+	           9|       RESY|            8|       resy|
+	          44|       BYTE|            1|       byte|
+	          45|       WORD|            2|       word|
+	          46|      DWORD|            4|      dword|
+	====================================================
+
+==================================================
+Global var list:
+----------------
+
+	**************************************************************************************************
+	    var_id|   var_name|     offset|       type|  true_type|        len| 
+	---------------------------------------------------------------------------------------------------
+	**************************************************************************************************
+==================================================
+-- print_ir -- (cur_file=0x84191c0)
+-- ir_file_print -- 
+-- ir_stslist_print -- 
+-- ir_stslist_print -- 
+      -- ir_sts_print -- (sts=0x         0) 
+      -- ir_sts_print -- (sts=0x   8419640) 
+            ---- (sts_kind=IR_STS_LABEL) 
+                -- ir_labellist_print -- (explist=0x8419630) 
+                     -- ir_exp_print -- (exp=8419580)
+                          ----(exp_kind=IR_EXP_LABEL) 
+label_name: _start,  label_id: 0 
+      -- ir_sts_print -- (sts=0x   8419800) 
+            ---- (sts_kind=IR_STS_MOV) 
+                -- ir_explist_print -- (explist=0x8419660) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=8419670)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=ebx)                     -- ir_exp_print -- (exp=8419730)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=5)      -- ir_sts_print -- (sts=0x   84199c0) 
+            ---- (sts_kind=IR_STS_MOV) 
+                -- ir_explist_print -- (explist=0x8419820) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=8419830)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=eax)                     -- ir_exp_print -- (exp=84198f0)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=43)      -- ir_sts_print -- (sts=0x   8419ab0) 
+            ---- (sts_kind=IR_STS_PUSH) 
+                -- ir_explist_print -- (explist=0x84199e0) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=84199f0)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=ebx)      -- ir_sts_print -- (sts=0x   8419ba0) 
+            ---- (sts_kind=IR_STS_PUSH) 
+                -- ir_explist_print -- (explist=0x8419ad0) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=8419ae0)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=eax)      -- ir_sts_print -- (sts=0x   8419c90) 
+            ---- (sts_kind=IR_STS_CALL) 
+                -- ir_explist_print -- (explist=0x8419bc0) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=8419bd0)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=0
+      -- ir_sts_print -- (sts=0x   8419e50) 
+            ---- (sts_kind=IR_STS_ADD) 
+                -- ir_explist_print -- (explist=0x8419cb0) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=8419cc0)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=esp)                     -- ir_exp_print -- (exp=8419d80)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=8)      -- ir_sts_print -- (sts=0x   841a010) 
+            ---- (sts_kind=IR_STS_MOV) 
+                -- ir_explist_print -- (explist=0x8419e70) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=8419e80)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=ebx)                     -- ir_exp_print -- (exp=8419f40)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=0)      -- ir_sts_print -- (sts=0x   841a1d0) 
+            ---- (sts_kind=IR_STS_MOV) 
+                -- ir_explist_print -- (explist=0x841a030) 
+                     -- ir_exp_print -- (exp=0)
+                     -- ir_exp_print -- (exp=841a040)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=eax)                     -- ir_exp_print -- (exp=841a100)
+                          ----(exp_kind=IR_EXP_VARADDR) 
+                               ----ir_var_print(s) ,kind=21, var_type=46
+                                    (name=1)      -- ir_sts_print -- (sts=0x   841a2d0) 
+            ---- (sts_kind=          ) 
+==================================================================
+	pasm_main
+==================================================================
+	-- pasm_file_build  -- 
+-- pasm_file_process -- 
+	-- pasm_stslist_build  -- 
+-- pasm_stslist_process -- 
+	-- file_build  -- 
+	-- pasm_add2file  -- 
+	-- pasm_stslist_build  -- 
+-- pasm_stslist_process -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- label -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+      -- pasm_sts_process -- 
+	-- pexplist_build  -- 
+                -- pasm_explist_process --
+                     --pasm_exp_process -- 
+-- var -- 
+	-- pexplist_build  -- 
+	-- pasm_add2explist  -- 
+	-- pasm_sts_build  -- 
+	-- pasm_stslist_build  -- 
+	-- pasm_add2stslist  -- 
+	-- file_build  -- 
+	-- pasm_add2file  -- 
+==================================================================
+	PASM print
+==================================================================
+-- print_pasm -- (pcur_file=0x841a300)
+-- pasm_file_process -- 
+-- pr_pasm_stslist_process -- 
+-- pr_pasm_stslist_process -- 
+      -- pr_pasm_sts_process -- 
+-- pr_pasm_stslist_process -- 
+      -- pr_pasm_sts_process -- 
+      -- pr_pasm_sts_process -- 
+++++- label sts ++++++++
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+Label(label:_start, id:0)
+      -- pr_pasm_sts_process -- 
++++++ mov sts +++++++-
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:ebx)
+                     --pr_pasm_exp_process -- 
+
+var(varname:5)
+      -- pr_pasm_sts_process -- 
++++++ mov sts +++++++-
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:eax)
+                     --pr_pasm_exp_process -- 
+
+var(varname:43)
+      -- pr_pasm_sts_process -- 
+++++- push sts ++++++++
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:ebx)
+      -- pr_pasm_sts_process -- 
+++++- push sts ++++++++
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:eax)
+      -- pr_pasm_sts_process -- 
+++++- call sts ++++++++
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:L0)
+      -- pr_pasm_sts_process -- 
+++++- add sts ++++++++
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:esp)
+                     --pr_pasm_exp_process -- 
+
+var(varname:8)
+      -- pr_pasm_sts_process -- 
++++++ mov sts +++++++-
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:ebx)
+                     --pr_pasm_exp_process -- 
+
+var(varname:0)
+      -- pr_pasm_sts_process -- 
++++++ mov sts +++++++-
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:eax)
+                     --pr_pasm_exp_process -- 
+
+var(varname:1)
+      -- pr_pasm_sts_process -- 
+++++- int sts ++++++++
+                -- pr_pasm_explist_process --
+                     --pr_pasm_exp_process -- 
+
+                     --pr_pasm_exp_process -- 
+
+var(varname:80)
+
+
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+	end of PASM printf
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+==================================================================
+	ins_main
+==================================================================
+-- print_ins -- (pcur_file=0x841a300)
+	-- file_build  -- 
+-- ins_file_process -- 
+	-- ins_stslist_build  -- 
+-- ins_stslist_process -- 
+
+	-- file_build  -- 
+	-- ins_add2file  -- 
+	-- ins_stslist_build  -- 
+-- ins_stslist_process -- 
+
+	-- file_build  -- 
+	-- ins_add2file  -- 
+	-- ins_stslist_build  -- 
+-- ins_stslist_process -- 
+
+-- ins_label_build -- 
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+-- ins_label_32_build(s) -- 
+-- ins_label_32_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b158, dst=0x841b048)  -- 
+
+-- ins_mov_build -- 
+-- ins_mov_reg_2_imm_32_build(s) -- 
+-- ins_mov_reg_2_imm_32_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b230, dst=0x841b048)  -- 
+
+-- ins_mov_build -- 
+-- ins_mov_reg_2_imm_32_build(s) -- 
+-- ins_mov_reg_2_imm_32_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b308, dst=0x841b048)  -- 
+
+-- ins_push_build(s) -- 
+-- ins_push_reg_32_build(s) -- 
+-- ins_push_reg_32_build(e) -- 
+
+-- ins_push_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b3d8, dst=0x841b048)  -- 
+
+-- ins_push_build(s) -- 
+-- ins_push_reg_32_build(s) -- 
+-- ins_push_reg_32_build(e) -- 
+
+-- ins_push_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b4a8, dst=0x841b048)  -- 
+
+-- ins_call_build -- 
+ins_call_build::label=L0
+
+-- ins_call_32_build(s) -- 
+-- ins_call_32_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b5c0, dst=0x841b048)  -- 
+
+-- ins_add_build -- 
+-- ins_add_reg_2_imm_8_build(s) -- 
+-- ins_add_reg_2_imm_8_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b698, dst=0x841b048)  -- 
+
+-- ins_mov_build -- 
+-- ins_mov_reg_2_imm_32_build(s) -- 
+-- ins_mov_reg_2_imm_32_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b770, dst=0x841b048)  -- 
+
+-- ins_mov_build -- 
+-- ins_mov_reg_2_imm_32_build(s) -- 
+-- ins_mov_reg_2_imm_32_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b848, dst=0x841b048)  -- 
+
+-- ins_int_build(s) -- 
+-- ins_int_imm_8_build(s) -- 
+-- ins_int_imm_8_build(e) -- 
+
+-- ins_int_build(e) -- 
+
+	-- ins_sts_build  -- 
+	-- ins_stslist_build  -- 
+	-- ins_add2stslist(src=0x841b918, dst=0x841b048)  -- 
+
+	-- file_build  -- 
+	-- ins_add2file  -- 
+==================================================================
+	ins print
+==================================================================
+0x0:	label(kind=380, len=0, name=_start, offset=0x0)
+
+0x0:	mov(kind=20, len=5, format_1=0xbb, data=0x5)
+
+0x5:	mov(kind=20, len=5, format_1=0xb8, data=0x43)
+
+0xa:	push(kind=60, len=1, format_1=0x53)
+
+0xb:	push(kind=60, len=1, format_1=0x50)
+
+0xc:	call(kind=100, len=5, format_1=0xe8, label=L0, offset=0x0)
+
+0x14:	mov(kind=20, len=5, format_1=0xbb, data=0x0)
+
+0x19:	mov(kind=20, len=5, format_1=0xb8, data=0x1)
+
+==================================================================
+	ins update
+==================================================================
+	-- symtbl_search(s)  -- 
+	-- hashing(s)  -- 
+	-- hashing(e)  -- 
+	-- rel32list_build  -- 
+	-- elf_add2rellist  -- 
+ins_update finish !!!
+
+==================================================================
+	ins print
+==================================================================
+0x0:	label(kind=380, len=0, name=_start, offset=0x0)
+
+0x0:	mov(kind=20, len=5, format_1=0xbb, data=0x5)
+
+0x5:	mov(kind=20, len=5, format_1=0xb8, data=0x43)
+
+0xa:	push(kind=60, len=1, format_1=0x53)
+
+0xb:	push(kind=60, len=1, format_1=0x50)
+
+0xc:	call(kind=100, len=5, format_1=0xe8, label=L0, offset=0xffffffef)
+
+0x14:	mov(kind=20, len=5, format_1=0xbb, data=0x0)
+
+0x19:	mov(kind=20, len=5, format_1=0xb8, data=0x1)
+
+==================================================================
+	machine code main
+==================================================================
+==================================================================
+	symbol list:
+==================================================================
+	-- elfsymtablist_build  -- 
+	-- elf_add2symlist  -- 
+	-- strtablist_build  -- 
+	-- elf_add2strlist  -- 
+	-- elfsymtablist_build  -- 
+	-- elf_add2symlist  -- 
+	-- strtablist_build  -- 
+	-- elf_add2strlist  -- 
+
+
+add elf header(file_offset=0x0)
+==================================================================
+	elf_header_build
+==================================================================
+add section_null header(file_offset=0x40)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_text header(file_offset=0x68)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_data header(file_offset=0x90)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_bss header(file_offset=0xb8)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_rodata header(file_offset=0xe0)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_reltext header(file_offset=0x108)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_shstrtab header(file_offset=0x130)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_symtab header(file_offset=0x158)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_strtab header(file_offset=0x180, strtab_offset=0xb)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_comment header(file_offset=0x1a8)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_eh_frame header(file_offset=0x1d0)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_rel_eh_frame header(file_offset=0x1f8)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_note_gnu_stack header(file_offset=0x220)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section content(text::offset=0x248)
+;==================================================================
+	machine code file
+;==================================================================
+add section content(data::offset=0x270)
+
+add section content(bss::offset=0x280)
+add section content(rodata::offset=0x290)
+add section content(reltext::offset=0x2a0)
+add section content(shstrtab::offset=0x2b0)
+add section content(symtab::offset=0x320)
+add section content(strtab::offset=0x370)
+end(offset=0x380, size=0xd)
+add section content(rodata::offset=0x380)
+add section content(rodata::offset=0x390)
+add section content(rodata::offset=0x3a0)
+add section content(rodata::offset=0x3b0)
+--end dnasm--

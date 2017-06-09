@@ -1,0 +1,349 @@
+Archive member included because of file (symbol)
+
+../../dst/dnasm.a(printf.o)   test.o (printi)
+../../dst/dnasm.a(write.o)    ../../dst/dnasm.a(printf.o) (dnasm_ex_write)
+../../dst/dnasm.a(lib.o)      ../../dst/dnasm.a(printf.o) (empty_buf)
+../../dst/dnasm.a(liba.o)     ../../dst/dnasm.a(printf.o) (h2s_a)
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../dst/dnasm.a(printf.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 ../../dst/dnasm.a(lib.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+Address of section .text set to 0x8048000
+LOAD test.o
+LOAD start.o
+LOAD ../../dst/dnasm.a
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048094                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp
+ *(.interp)
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash
+ *(.hash)
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym
+ *(.dynsym)
+
+.dynstr
+ *(.dynstr)
+
+.gnu.version
+ *(.gnu.version)
+
+.gnu.version_d
+ *(.gnu.version_d)
+
+.gnu.version_r
+ *(.gnu.version_r)
+
+.rel.dyn        0x0000000008048094        0x0
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 test.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ *(.rel.ifunc)
+
+.rel.plt        0x0000000008048094        0x0
+ *(.rel.plt)
+                0x0000000008048094                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 test.o
+                0x0000000008048094                PROVIDE (__rel_iplt_end, .)
+
+.init
+ *(.init)
+
+.plt            0x00000000080480a0        0x0
+ *(.plt)
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 test.o
+
+.text           0x0000000008048000      0x8e7
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008048000       0xba test.o
+                0x0000000008048000                L1
+                0x000000000804805e                L0
+ *fill*         0x00000000080480ba        0x6 90909090
+ .text          0x00000000080480c0       0x20 start.o
+                0x00000000080480c0                _start
+ .text          0x00000000080480e0      0x286 ../../dst/dnasm.a(printf.o)
+                0x00000000080480e0                prints
+                0x0000000008048106                printf_exec
+                0x00000000080482dd                printi
+                0x000000000804832a                printcr
+ *fill*         0x0000000008048366        0xa 90909090
+ .text          0x0000000008048370       0x1d ../../dst/dnasm.a(write.o)
+                0x0000000008048370                dnasm_ex_write
+ *fill*         0x000000000804838d        0x3 90909090
+ .text          0x0000000008048390      0x4cf ../../dst/dnasm.a(lib.o)
+                0x0000000008048390                empty_buf
+                0x00000000080483c4                strcopy
+                0x00000000080483eb                strcpy
+                0x000000000804841b                memcpy
+                0x000000000804844b                strlen
+                0x0000000008048474                strcmp
+                0x00000000080484e3                s2i
+                0x0000000008048557                s2h
+                0x0000000008048628                c2i
+                0x000000000804863d                squ
+                0x000000000804866e                i2s
+                0x00000000080486eb                h2s
+                0x0000000008048769                i2h
+                0x00000000080487e8                push_t
+                0x0000000008048839                clear_buf
+ *fill*         0x000000000804885f        0x1 90909090
+ .text          0x0000000008048860       0x87 ../../dst/dnasm.a(liba.o)
+                0x0000000008048860                strlen_a
+                0x0000000008048878                empty_buf_a
+                0x0000000008048891                h2s_a
+ *(.gnu.warning)
+
+.fini
+ *(.fini)
+                0x00000000080488e7                PROVIDE (__etext, .)
+                0x00000000080488e7                PROVIDE (_etext, .)
+                0x00000000080488e7                PROVIDE (etext, .)
+
+.rodata         0x00000000080488e8       0xdc
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x00000000080488e8       0xdc ../../dst/dnasm.a(lib.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x00000000080489c4      0x27c
+ *(.eh_frame)
+ .eh_frame      0x00000000080489c4       0x98 ../../dst/dnasm.a(printf.o)
+ .eh_frame      0x0000000008048a5c      0x1e4 ../../dst/dnasm.a(lib.o)
+                                        0x1fc (size before relaxing)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000008048c40                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000008049c40                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000008049c40        0x0
+                0x0000000008049c40                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000008049c40                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008049c40        0x0
+                0x0000000008049c40                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000008049c40                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008049c40        0x0
+                0x0000000008049c40                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000008049c40                PROVIDE (__fini_array_end, .)
+
+.ctors
+ *crtbegin.o(.ctors)
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+
+.dtors
+ *crtbegin.o(.dtors)
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+
+.jcr
+ *(.jcr)
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic
+ *(.dynamic)
+
+.got
+ *(.got)
+ *(.igot)
+                0x0000000008049c40                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x0000000008049c40        0x0
+ *(.got.plt)
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 test.o
+
+.data           0x0000000008049c40       0x14
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000008049c40        0x4 test.o
+ .data          0x0000000008049c44        0x0 ../../dst/dnasm.a(printf.o)
+ .data          0x0000000008049c44        0xf ../../dst/dnasm.a(write.o)
+ *fill*         0x0000000008049c53        0x1 00
+ .data          0x0000000008049c54        0x0 ../../dst/dnasm.a(lib.o)
+
+.data1
+ *(.data1)
+                0x0000000008049c54                _edata = .
+                0x0000000008049c54                PROVIDE (edata, .)
+                0x0000000008049c54                __bss_start = .
+
+.bss            0x0000000008049c54        0x0
+ *(.dynbss)
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000008049c54        0x0 ../../dst/dnasm.a(printf.o)
+ .bss           0x0000000008049c54        0x0 ../../dst/dnasm.a(lib.o)
+ *(COMMON)
+                0x0000000008049c54                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x0000000008049c54                . = ALIGN (0x4)
+                0x0000000008049c54                . = ALIGN (0x4)
+                0x0000000008049c54                _end = .
+                0x0000000008049c54                PROVIDE (end, .)
+                0x0000000008049c54                . = DATA_SEGMENT_END (.)
+
+.stab           0x0000000000000000      0x348
+ *(.stab)
+ .stab          0x0000000000000000      0x2c4 test.o
+ .stab          0x00000000000002c4       0x84 start.o
+                                         0x90 (size before relaxing)
+
+.stabstr        0x0000000000000000       0x14
+ *(.stabstr)
+ .stabstr       0x0000000000000000       0x14 test.o
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a ../../dst/dnasm.a(printf.o)
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b ../../dst/dnasm.a(lib.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(test elf32-i386)

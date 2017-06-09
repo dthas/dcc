@@ -1,0 +1,1164 @@
+Archive member included because of file (symbol)
+
+/usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/i386-linux-gnu/crt1.o (__libc_csu_init)
+dst/dnasm.a(lib.o)            src/pre/pre_main.o (empty_buf)
+
+Allocating common symbols
+Common symbol       size              file
+
+pre_lex_char_state  0x4               src/pre/pre_main.o
+p_symtbl            0x4               src/front_end/symbol/symbol_main.o
+g_var_id            0x4               src/front_end/symbol/symbol_main.o
+cur_file            0x4               src/front_end/parse/parse_func.o
+parse_production    0x4               src/front_end/symbol/symbol_main.o
+flg_extern_g        0x1               src/front_end/symbol/symbol_main.o
+reltab_offset       0x4               src/back_end/ins/i386/ins_main.o
+p_cur_token         0x4               src/front_end/symbol/symbol_main.o
+label_id            0x4               src/front_end/parse/parse_func.o
+fr                  0x4               src/main/main.o
+p_tmp_token         0x4               src/front_end/symbol/symbol_main.o
+sts_kind            0x4               src/back_end/ins/i386/ins_main.o
+pcur_file           0x4               src/back_end/pasm/pasm_main.o
+cur_blocklist       0x4               src/back_end/ins/i386/ins_main.o
+pvarlist            0x4               src/front_end/parse/parse_func.o
+g_var_addr_offset   0x4               src/front_end/parse/parse_func.o
+p_lex_char_state_tab
+                    0x4               src/front_end/symbol/symbol_main.o
+type_id_selfdef     0x4               src/front_end/parse/parse_func.o
+p_stack             0x4               src/front_end/symbol/symbol_main.o
+ins_data_offset     0x4               src/back_end/ins/i386/ins_main.o
+cur_explist         0x4               src/front_end/parse/parse_func.o
+typelist            0x54              src/front_end/semantics/seman_type.o
+cur_block           0x4               src/back_end/ins/i386/ins_main.o
+p_word              0x4               src/front_end/symbol/symbol_main.o
+cur_sts             0x4               src/front_end/parse/parse_func.o
+varlist             0x5c              src/mid_end/frame/var.o
+cur_stslist         0x4               src/front_end/parse/parse_func.o
+cur_var             0x4               src/front_end/parse/parse_func.o
+strl                0x4               src/back_end/ins/i386/ins_main.o
+lex_char_state      0x4               src/front_end/symbol/symbol_main.o
+p_parse_production_tab
+                    0x4               src/front_end/symbol/symbol_main.o
+gcurfile            0x4               src/back_end/ins/i386/ins_main.o
+symtab_offset       0x4               src/back_end/ins/i386/ins_main.o
+old_token           0x4               src/front_end/symbol/symbol_main.o
+ins_code_offset     0x4               src/back_end/ins/i386/ins_main.o
+pre_lex_token       0x4               src/pre/pre_main.o
+p_pre_lex_char_state_tab
+                    0x4               src/pre/pre_main.o
+strtab_offset       0x4               src/back_end/ins/i386/ins_main.o
+sym_id              0x4               src/front_end/symbol/symbol_main.o
+fw                  0x4               src/main/main.o
+rell                0x4               src/back_end/ins/i386/ins_main.o
+flg_cmpcond_g       0x1               src/front_end/symbol/symbol_main.o
+esyml               0x4               src/back_end/ins/i386/ins_main.o
+token               0x4               src/front_end/symbol/symbol_main.o
+pe_t                0xa0              src/back_end/pasm/pasm_main.o
+p_typelist          0x4               src/front_end/parse/parse_func.o
+sym_t               0xe8              src/front_end/symbol/symbol_main.o
+p_pre_token         0x4               src/front_end/symbol/symbol_main.o
+p_queue             0x4               src/front_end/symbol/symbol_main.o
+dbl                 0x4               src/back_end/ins/i386/ins_main.o
+postfix_var_len     0x4               src/front_end/symbol/symbol_main.o
+icur_file           0x4               src/back_end/ins/i386/ins_main.o
+tokenlist           0x54              src/front_end/lex/lex_lib.o
+flg_abop_g          0x1               src/front_end/symbol/symbol_main.o
+flg_global_g        0x1               src/front_end/symbol/symbol_main.o
+parse_production_tab
+                    0xb400            src/front_end/symbol/symbol_main.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/i386-linux-gnu/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crti.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/i386-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .group         0x0000000000000000        0x8 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/i386-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/main/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/symbol/symbol_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/pre/pre_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/pre/lex/pre_lex_char_state_tab.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/lex/lex_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/lex/lex_char_state_tab.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/lex/lex_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/parse/parse_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/parse/parse_production_tab.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/parse/parse_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/parse/parse_func.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/semantics/seman_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/semantics/seman_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/front_end/semantics/seman_type.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/mid_end/frame/frame_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/mid_end/frame/var.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/mid_end/ir/ir_list.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/mid_end/ir/ir_list_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/pasm/pasm_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/pasm/pasm_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/pasm/pasm_lib_t.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/ins/i386/ins_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/ins/i386/ins_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/ins/i386/ins_lib_t.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/ins/i386/ins_lib_1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/ins/i386/ins_update.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/mcode/mcode_main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/mcode/mcode_file.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/back_end/mcode/mcode_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/elf/elf.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/lib/elf/elf_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 dst/dnasm.a(lib.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/i386-linux-gnu/crt1.o
+LOAD /usr/lib/i386-linux-gnu/crti.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+LOAD /usr/lib/i386-linux-gnu/libc.so
+START GROUP
+LOAD /lib/i386-linux-gnu/libc.so.6
+LOAD /usr/lib/i386-linux-gnu/libc_nonshared.a
+LOAD /lib/i386-linux-gnu/ld-linux.so.2
+END GROUP
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+LOAD /usr/lib/i386-linux-gnu/crtn.o
+LOAD src/main/main.o
+LOAD src/front_end/symbol/symbol_main.o
+LOAD src/pre/pre_main.o
+LOAD src/pre/lex/pre_lex_char_state_tab.o
+LOAD src/front_end/lex/lex_main.o
+LOAD src/front_end/lex/lex_char_state_tab.o
+LOAD src/front_end/lex/lex_lib.o
+LOAD src/front_end/parse/parse_main.o
+LOAD src/front_end/parse/parse_production_tab.o
+LOAD src/front_end/parse/parse_lib.o
+LOAD src/front_end/parse/parse_func.o
+LOAD src/front_end/semantics/seman_lib.o
+LOAD src/front_end/semantics/seman_main.o
+LOAD src/front_end/semantics/seman_type.o
+LOAD src/mid_end/frame/frame_main.o
+LOAD src/mid_end/frame/var.o
+LOAD src/mid_end/ir/ir_list.o
+LOAD src/mid_end/ir/ir_list_lib.o
+LOAD src/back_end/pasm/pasm_main.o
+LOAD src/back_end/pasm/pasm_lib.o
+LOAD src/back_end/pasm/pasm_lib_t.o
+LOAD src/back_end/ins/i386/ins_main.o
+LOAD src/back_end/ins/i386/ins_lib.o
+LOAD src/back_end/ins/i386/ins_lib_t.o
+LOAD src/back_end/ins/i386/ins_lib_1.o
+LOAD src/back_end/ins/i386/ins_update.o
+LOAD src/back_end/mcode/mcode_main.o
+LOAD src/back_end/mcode/mcode_file.o
+LOAD src/back_end/mcode/mcode_lib.o
+LOAD src/lib/elf/elf.o
+LOAD src/lib/elf/elf_lib.o
+LOAD dst/dnasm.a
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048114                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x0000000008048114       0x13
+ *(.interp)
+ .interp        0x0000000008048114       0x13 /usr/lib/i386-linux-gnu/crt1.o
+
+.note.ABI-tag   0x0000000008048128       0x20
+ .note.ABI-tag  0x0000000008048128       0x20 /usr/lib/i386-linux-gnu/crt1.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000008048148       0x94
+ *(.hash)
+ .hash          0x0000000008048148       0x94 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x00000000080481dc      0x120
+ *(.dynsym)
+ .dynsym        0x00000000080481dc      0x120 /usr/lib/i386-linux-gnu/crt1.o
+
+.dynstr         0x00000000080482fc       0xa9
+ *(.dynstr)
+ .dynstr        0x00000000080482fc       0xa9 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.version    0x00000000080483a6       0x24
+ *(.gnu.version)
+ .gnu.version   0x00000000080483a6       0x24 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.version_d  0x00000000080483cc        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.version_r  0x00000000080483cc       0x30
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x00000000080483cc       0x30 /usr/lib/i386-linux-gnu/crt1.o
+
+.rel.dyn        0x00000000080483fc        0x8
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x00000000080483fc        0x8 /usr/lib/i386-linux-gnu/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ *(.rel.ifunc)
+
+.rel.plt        0x0000000008048404       0x58
+ *(.rel.plt)
+ .rel.plt       0x0000000008048404       0x58 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000804845c                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000804845c                PROVIDE (__rel_iplt_end, .)
+
+.init           0x000000000804845c       0x2e
+ *(.init)
+ .init          0x000000000804845c       0x1f /usr/lib/i386-linux-gnu/crti.o
+                0x000000000804845c                _init
+ .init          0x000000000804847b        0x5 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .init          0x0000000008048480        0x5 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .init          0x0000000008048485        0x5 /usr/lib/i386-linux-gnu/crtn.o
+
+.plt            0x0000000008048490       0xc0
+ *(.plt)
+ .plt           0x0000000008048490       0xc0 /usr/lib/i386-linux-gnu/crt1.o
+                0x00000000080484a0                printf@@GLIBC_2.0
+                0x00000000080484b0                fclose@@GLIBC_2.1
+                0x00000000080484c0                fwrite@@GLIBC_2.0
+                0x00000000080484d0                malloc@@GLIBC_2.0
+                0x00000000080484f0                exit@@GLIBC_2.0
+                0x0000000008048500                __libc_start_main@@GLIBC_2.0
+                0x0000000008048510                fopen@@GLIBC_2.1
+                0x0000000008048520                ungetc@@GLIBC_2.0
+                0x0000000008048530                fgetc@@GLIBC_2.0
+                0x0000000008048540                fputc@@GLIBC_2.0
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+
+.text           0x0000000008048550    0x1279b
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x0000000008048550       0x24 /usr/lib/i386-linux-gnu/crt1.o
+                0x0000000008048550                _start
+ .text          0x0000000008048574        0x0 /usr/lib/i386-linux-gnu/crti.o
+ *fill*         0x0000000008048574        0xc 90909090
+ .text          0x0000000008048580       0x83 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ *fill*         0x0000000008048603        0xd 90909090
+ .text          0x0000000008048610       0x72 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000008048610                __libc_csu_init
+                0x0000000008048680                __libc_csu_fini
+ .text.__i686.get_pc_thunk.bx
+                0x0000000008048682        0x4 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000008048682                __i686.get_pc_thunk.bx
+ *fill*         0x0000000008048686        0xa 90909090
+ .text          0x0000000008048690       0x2a /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ *fill*         0x00000000080486ba        0x2 90909090
+ .text          0x00000000080486bc        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .text          0x00000000080486bc       0xf7 src/main/main.o
+                0x00000000080486bc                main
+                0x000000000804878c                process
+ *fill*         0x00000000080487b3        0x1 90909090
+ .text          0x00000000080487b4     0x123a src/front_end/symbol/symbol_main.o
+                0x00000000080487b4                symtbl_init
+                0x00000000080491fe                symbol_crt
+                0x0000000008049318                symtbl_add
+                0x0000000008049409                symtbl_validate
+                0x0000000008049441                symtbl_validate_s
+                0x0000000008049488                symtbl_add_s
+                0x0000000008049526                symtbl_del
+                0x0000000008049587                symtbl_upd
+                0x000000000804963a                symtbl_search
+                0x00000000080496d3                symtbl_search_i
+                0x000000000804973f                symtbl_print
+                0x000000000804995b                symbol_empty
+ *fill*         0x00000000080499ee        0x2 90909090
+ .text          0x00000000080499f0      0x2b8 src/pre/pre_main.o
+                0x00000000080499f0                pre_main
+ .text          0x0000000008049ca8      0x3cd src/pre/lex/pre_lex_char_state_tab.o
+                0x0000000008049ca8                pre_lex_statetab_init
+ *fill*         0x000000000804a075        0x3 90909090
+ .text          0x000000000804a078      0x297 src/front_end/lex/lex_main.o
+                0x000000000804a078                lex_init
+                0x000000000804a0a8                lex_main
+                0x000000000804a14a                add_tok
+ *fill*         0x000000000804a30f        0x1 90909090
+ .text          0x000000000804a310      0xc80 src/front_end/lex/lex_char_state_tab.o
+                0x000000000804a310                lex_char_statetab_init
+ .text          0x000000000804af90      0x1df src/front_end/lex/lex_lib.o
+                0x000000000804af90                tokenlist_init
+                0x000000000804afd1                tokenlist_add
+                0x000000000804b08c                tokenlist_print
+                0x000000000804b0fa                get_tok
+                0x000000000804b12c                uget_tok
+ *fill*         0x000000000804b16f        0x1 90909090
+ .text          0x000000000804b170       0x56 src/front_end/parse/parse_main.o
+                0x000000000804b170                parse_init
+                0x000000000804b1b9                parse
+ *fill*         0x000000000804b1c6        0x2 90909090
+ .text          0x000000000804b1c8     0x1e33 src/front_end/parse/parse_production_tab.o
+                0x000000000804b1c8                parse_productiontab_init
+ *fill*         0x000000000804cffb        0x1 90909090
+ .text          0x000000000804cffc        0x0 src/front_end/parse/parse_lib.o
+ .text          0x000000000804cffc     0x240c src/front_end/parse/parse_func.o
+                0x000000000804cffc                parse_entry
+ .text          0x000000000804f408        0x0 src/front_end/semantics/seman_lib.o
+ .text          0x000000000804f408       0x1a src/front_end/semantics/seman_main.o
+                0x000000000804f408                seman_init
+ *fill*         0x000000000804f422        0x2 90909090
+ .text          0x000000000804f424      0x60a src/front_end/semantics/seman_type.o
+                0x000000000804f424                init_typelist
+                0x000000000804f655                check_type_s
+                0x000000000804f6a0                check_type_s_1
+                0x000000000804f70b                check_type_i
+                0x000000000804f764                check_type_l
+                0x000000000804f7af                check_type_t
+                0x000000000804f7f7                check_type_t_1
+                0x000000000804f840                add_typelist
+                0x000000000804f95c                print_typelist
+ *fill*         0x000000000804fa2e        0x2 90909090
+ .text          0x000000000804fa30        0x0 src/mid_end/frame/frame_main.o
+ .text          0x000000000804fa30      0x35a src/mid_end/frame/var.o
+                0x000000000804fa30                var_init
+                0x000000000804fa49                var_build
+                0x000000000804fae4                var_build_1
+                0x000000000804fb55                add_var2varlist
+                0x000000000804fc05                search_var_s
+                0x000000000804fc49                printvarlist
+                0x000000000804fd3a                print_g_varlist
+ *fill*         0x000000000804fd8a        0x2 90909090
+ .text          0x000000000804fd8c      0xd30 src/mid_end/ir/ir_list.o
+                0x000000000804fd8c                ir_init
+                0x000000000804fda5                file_build
+                0x000000000804fe07                ir_add2file
+                0x000000000804fe4d                sts_build
+                0x000000000804fe93                stslist_build
+                0x000000000804fef5                ir_add2stslist
+                0x000000000804ff3b                explist_build
+                0x000000000804ff9d                ir_add2explist
+                0x000000000804ffe3                ir_var_exp_build
+                0x0000000008050123                ir_string_exp_build
+                0x00000000080501f1                ir_const_exp_build
+                0x000000000805030b                ir_movsts_build
+                0x0000000008050363                ir_addsts_build
+                0x00000000080503bb                ir_substs_build
+                0x0000000008050413                ir_mulsts_build
+                0x000000000805046b                ir_divsts_build
+                0x00000000080504c3                ir_callsts_build
+                0x000000000805051b                ir_retsts_build
+                0x000000000805056a                ir_jmpsts_build
+                0x00000000080505c2                ir_jasts_build
+                0x000000000805061a                ir_jbsts_build
+                0x0000000008050672                ir_jests_build
+                0x00000000080506ca                ir_jaests_build
+                0x0000000008050722                ir_jbests_build
+                0x000000000805077a                ir_jnests_build
+                0x00000000080507d2                ir_pushsts_build
+                0x000000000805082a                ir_popsts_build
+                0x0000000008050882                ir_cmpsts_build
+                0x00000000080508da                ir_abop_exp_build
+                0x0000000008050947                ir_label_exp_build
+                0x00000000080509b4                ir_labelsts_build
+                0x0000000008050a0c                ir_xorsts_build
+                0x0000000008050a64                ir_intsts_build
+ .text          0x0000000008050abc      0x4e7 src/mid_end/ir/ir_list_lib.o
+                0x0000000008050abc                print_ir
+                0x0000000008050ae8                ir_file_print
+                0x0000000008050b1d                ir_stslist_print
+                0x0000000008050b52                ir_sts_print
+                0x0000000008050d27                ir_explist_print
+                0x0000000008050d71                ir_labellist_print
+                0x0000000008050dbb                ir_exp_print
+                0x0000000008050ee9                ir_var_print
+ *fill*         0x0000000008050fa3        0x1 90909090
+ .text          0x0000000008050fa4     0x11e7 src/back_end/pasm/pasm_main.o
+                0x0000000008050fa4                pasm_main
+                0x0000000008050ffb                pasm_file_process
+                0x0000000008051064                pasm_stslist_process
+                0x00000000080510c9                pasm_sts_process
+                0x000000000805169c                pasm_explist_process
+                0x00000000080516ef                pasm_exp_process
+                0x0000000008051f3c                pexplist_build
+                0x0000000008051f9e                pasm_add2explist
+                0x0000000008051fe4                pasm_sts_build
+                0x000000000805203b                pasm_stslist_build
+                0x000000000805209d                pasm_add2stslist
+                0x00000000080520e3                pasm_file_build
+                0x0000000008052145                pasm_add2file
+ *fill*         0x000000000805218b        0x1 90909090
+ .text          0x000000000805218c      0x3b1 src/back_end/pasm/pasm_lib.o
+                0x000000000805218c                add
+                0x0000000008052248                minus
+                0x0000000008052304                mul
+                0x00000000080523c0                div
+                0x000000000805247c                reset_pasm
+                0x00000000080524b6                label
+                0x00000000080524fe                var
+ *fill*         0x000000000805253d        0x3 90909090
+ .text          0x0000000008052540      0x5b4 src/back_end/pasm/pasm_lib_t.o
+                0x0000000008052540                pr_pasm_main
+                0x00000000080525ba                pr_pasm_file_process
+                0x00000000080525ed                pr_pasm_stslist_process
+                0x0000000008052620                pr_pasm_sts_process
+                0x00000000080528d8                pr_pasm_explist_process
+                0x000000000805291b                pr_pasm_exp_process
+ .text          0x0000000008052af4      0xad8 src/back_end/ins/i386/ins_main.o
+                0x0000000008052af4                ins_init
+                0x0000000008052b48                ins_main
+                0x0000000008052bb6                ins_file_process
+                0x0000000008052c1f                ins_stslist_process
+                0x0000000008052c8b                ins_sts_process
+                0x0000000008053417                ins_sts_build
+                0x000000000805346e                ins_stslist_build
+                0x00000000080534d0                ins_add2stslist
+                0x0000000008053524                ins_file_build
+                0x0000000008053586                ins_add2file
+ .text          0x00000000080535cc     0x19c4 src/back_end/ins/i386/ins_lib.o
+                0x00000000080535cc                ins_ret_build
+                0x0000000008053616                ins_xor_build
+                0x000000000805373e                ins_add_build
+                0x00000000080538a1                ins_sub_build
+                0x00000000080539a5                ins_mul_build
+                0x0000000008053a65                ins_div_build
+                0x0000000008053b25                ins_mov_build
+                0x0000000008054240                ins_label_build
+                0x000000000805434c                ins_call_build
+                0x000000000805442f                ins_jump_build
+                0x0000000008054444                ins_ja_build
+                0x0000000008054535                ins_jb_build
+                0x0000000008054626                ins_je_build
+                0x0000000008054717                ins_jne_build
+                0x0000000008054808                ins_jae_build
+                0x00000000080548f9                ins_jbe_build
+                0x00000000080549ea                ins_cmp_build
+                0x0000000008054b12                ins_push_build
+                0x0000000008054ca3                ins_pop_build
+                0x0000000008054d41                ins_jmp_build
+                0x0000000008054e32                chk_reg_i
+                0x0000000008054ee4                ins_int_build
+ .text          0x0000000008054f90      0xd5b src/back_end/ins/i386/ins_lib_t.o
+                0x0000000008054f90                pr_ins_main
+                0x0000000008054fcc                pr_ins_file_process
+                0x0000000008054ff2                pr_ins_stslist_process
+                0x0000000008055018                pr_ins_sts_process
+                0x000000000805519f                pr_ins_cmp_process
+                0x0000000008055207                pr_ins_label_process
+                0x000000000805526d                pr_ins_ret_process
+                0x00000000080552c3                pr_ins_div_process
+                0x0000000008055344                pr_ins_mul_process
+                0x00000000080553c5                pr_ins_sub_process
+                0x000000000805542d                pr_ins_xor_process
+                0x0000000008055495                pr_ins_add_process
+                0x0000000008055563                pr_ins_pop_process
+                0x00000000080555b9                pr_ins_push_process
+                0x0000000008055682                pr_ins_mov_process
+                0x00000000080558d3                pr_ins_jmp_process
+                0x0000000008055958                pr_ins_ja_process
+                0x00000000080559dd                pr_ins_jb_process
+                0x0000000008055a62                pr_ins_je_process
+                0x0000000008055ae7                pr_ins_jae_process
+                0x0000000008055b6c                pr_ins_jbe_process
+                0x0000000008055bf1                pr_ins_jne_process
+                0x0000000008055c76                pr_ins_call_process
+ *fill*         0x0000000008055ceb        0x1 90909090
+ .text          0x0000000008055cec      0xbe4 src/back_end/ins/i386/ins_lib_1.o
+                0x0000000008055cec                ins_mov_reg_2_imm_32_build
+                0x0000000008055d4a                ins_mov_reg_2_reg_32_build
+                0x0000000008055dc0                ins_mov_reg_2_mem_32_build
+                0x0000000008055e2f                ins_mov_mem_2_reg_32_build
+                0x0000000008055e9e                ins_mov_numb_2_reg_32_build
+                0x0000000008055f06                ins_mov_reg_2_numb_32_build
+                0x0000000008055f6e                ins_add_reg_2_reg_32_build
+                0x0000000008055fd6                ins_add_reg_2_imm_32_build
+                0x000000000805603e                ins_add_reg_2_imm_8_build
+                0x00000000080560ad                ins_push_reg_32_build
+                0x0000000008056102                ins_push_mem_32_build
+                0x000000000805616e                ins_pop_reg_32_build
+                0x00000000080561c3                ins_call_32_build
+                0x0000000008056243                ins_ret_32_build
+                0x0000000008056291                ins_xor_reg_2_reg_32_build
+                0x00000000080562f9                ins_mul_reg_16_build
+                0x000000000805635c                ins_div_reg_16_build
+                0x00000000080563bf                ins_sub_reg_2_reg_32_build
+                0x0000000008056427                ins_cmp_reg_2_reg_32_build
+                0x000000000805648f                ins_jmp_8_build
+                0x000000000805650c                ins_ja_8_build
+                0x0000000008056589                ins_jae_8_build
+                0x0000000008056606                ins_je_8_build
+                0x0000000008056683                ins_jb_8_build
+                0x0000000008056700                ins_jbe_8_build
+                0x000000000805677d                ins_jne_8_build
+                0x00000000080567fa                ins_label_32_build
+                0x0000000008056872                ins_int_imm_8_build
+ .text          0x00000000080568d0      0x63a src/back_end/ins/i386/ins_update.o
+                0x00000000080568d0                ins_update
+                0x000000000805690c                upd_ins_file_process
+                0x0000000008056932                upd_ins_stslist_process
+                0x0000000008056958                upd_ins_sts_process
+                0x0000000008056a05                upd_ins_jmp_process
+                0x0000000008056a80                upd_ins_ja_process
+                0x0000000008056afb                upd_ins_jb_process
+                0x0000000008056b76                upd_ins_je_process
+                0x0000000008056bf1                upd_ins_jae_process
+                0x0000000008056c6c                upd_ins_jbe_process
+                0x0000000008056ce7                upd_ins_jne_process
+                0x0000000008056d62                upd_ins_call_process
+ *fill*         0x0000000008056f0a        0x2 90909090
+ .text          0x0000000008056f0c     0x208a src/back_end/mcode/mcode_main.o
+                0x0000000008056f0c                mcode_main
+                0x00000000080572e9                pr_mcode_title
+                0x0000000008058339                pr_mcode_content
+ *fill*         0x0000000008058f96        0x2 90909090
+ .text          0x0000000008058f98     0x12e8 src/back_end/mcode/mcode_file.o
+                0x0000000008058f98                pr_mcode_main
+                0x0000000008058fdb                pr_mcode_file_process
+                0x0000000008059008                pr_mcode_stslist_process
+                0x0000000008059035                pr_mcode_sts_process
+                0x000000000805923b                pr_mcode_cmp_process
+                0x00000000080592b3                pr_mcode_ret_process
+                0x00000000080592f9                pr_mcode_div_process
+                0x00000000080593a5                pr_mcode_mul_process
+                0x0000000008059451                pr_mcode_sub_process
+                0x00000000080594c9                pr_mcode_xor_process
+                0x0000000008059541                pr_mcode_add_process
+                0x0000000008059788                pr_mcode_pop_process
+                0x00000000080597ce                pr_mcode_push_process
+                0x00000000080598b3                pr_mcode_mov_process
+                0x0000000008059db1                pr_mcode_jmp_process
+                0x0000000008059e29                pr_mcode_ja_process
+                0x0000000008059ea1                pr_mcode_jb_process
+                0x0000000008059f19                pr_mcode_je_process
+                0x0000000008059f91                pr_mcode_jae_process
+                0x000000000805a009                pr_mcode_jbe_process
+                0x000000000805a081                pr_mcode_jne_process
+                0x000000000805a0f9                pr_mcode_call_process
+                0x000000000805a208                pr_mcode_int_process
+ .text          0x000000000805a280      0x109 src/back_end/mcode/mcode_lib.o
+                0x000000000805a280                section_copy
+                0x000000000805a325                align_16
+ *fill*         0x000000000805a389        0x3 90909090
+ .text          0x000000000805a38c      0x1ef src/lib/elf/elf.o
+                0x000000000805a38c                elf_header_build
+                0x000000000805a4c2                section_header_build
+ *fill*         0x000000000805a57b        0x1 90909090
+ .text          0x000000000805a57c      0x2a0 src/lib/elf/elf_lib.o
+                0x000000000805a57c                rel32list_build
+                0x000000000805a5de                elf_add2rellist
+                0x000000000805a624                elfsymtablist_build
+                0x000000000805a686                elf_add2symlist
+                0x000000000805a6cc                strtablist_build
+                0x000000000805a72e                elf_add2strlist
+                0x000000000805a774                dbtablist_build
+                0x000000000805a7d6                elf_add2dblist
+ .text          0x000000000805a81c      0x4cf dst/dnasm.a(lib.o)
+                0x000000000805a81c                empty_buf
+                0x000000000805a850                strcopy
+                0x000000000805a877                strcpy
+                0x000000000805a8a7                memcpy
+                0x000000000805a8d7                strlen
+                0x000000000805a900                strcmp
+                0x000000000805a96f                s2i
+                0x000000000805a9e3                s2h
+                0x000000000805aab4                c2i
+                0x000000000805aac9                squ
+                0x000000000805aafa                i2s
+                0x000000000805ab77                h2s
+                0x000000000805abf5                i2h
+                0x000000000805ac74                push_t
+                0x000000000805acc5                clear_buf
+ *(.gnu.warning)
+
+.fini           0x000000000805acec       0x1a
+ *(.fini)
+ .fini          0x000000000805acec       0x10 /usr/lib/i386-linux-gnu/crti.o
+                0x000000000805acec                _fini
+ .fini          0x000000000805acfc        0x5 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .fini          0x000000000805ad01        0x5 /usr/lib/i386-linux-gnu/crtn.o
+                0x000000000805ad06                PROVIDE (__etext, .)
+                0x000000000805ad06                PROVIDE (_etext, .)
+                0x000000000805ad06                PROVIDE (etext, .)
+
+.rodata         0x000000000805ad08     0x4138
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000805ad08        0x4 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000805ad08                _fp_hw
+ .rodata.cst4   0x000000000805ad0c        0x4 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000805ad0c                _IO_stdin_used
+ .rodata        0x000000000805ad10       0x7f src/main/main.o
+ *fill*         0x000000000805ad8f        0x1 00
+ .rodata        0x000000000805ad90      0x381 src/front_end/symbol/symbol_main.o
+ *fill*         0x000000000805b111        0x3 00
+ .rodata        0x000000000805b114       0x6b src/pre/pre_main.o
+ *fill*         0x000000000805b17f        0x1 00
+ .rodata        0x000000000805b180       0x22 src/pre/lex/pre_lex_char_state_tab.o
+ *fill*         0x000000000805b1a2        0x2 00
+ .rodata        0x000000000805b1a4       0x88 src/front_end/lex/lex_main.o
+ .rodata        0x000000000805b22c       0x47 src/front_end/lex/lex_char_state_tab.o
+ *fill*         0x000000000805b273        0x1 00
+ .rodata        0x000000000805b274       0x33 src/front_end/lex/lex_lib.o
+ *fill*         0x000000000805b2a7        0x1 00
+ .rodata        0x000000000805b2a8       0x48 src/front_end/parse/parse_production_tab.o
+ .rodata        0x000000000805b2f0      0x44b src/front_end/parse/parse_func.o
+ .rodata        0x000000000805b73b       0x15 src/front_end/semantics/seman_main.o
+ .rodata        0x000000000805b750      0x20b src/front_end/semantics/seman_type.o
+ *fill*         0x000000000805b95b        0x1 00
+ .rodata        0x000000000805b95c      0x244 src/mid_end/frame/var.o
+ .rodata        0x000000000805bba0      0x837 src/mid_end/ir/ir_list.o
+ *fill*         0x000000000805c3d7        0x1 00
+ .rodata        0x000000000805c3d8      0x1e9 src/mid_end/ir/ir_list_lib.o
+ *fill*         0x000000000805c5c1        0x3 00
+ .rodata        0x000000000805c5c4      0x278 src/back_end/pasm/pasm_main.o
+ .rodata        0x000000000805c83c       0x5f src/back_end/pasm/pasm_lib.o
+ *fill*         0x000000000805c89b        0x1 00
+ .rodata        0x000000000805c89c      0x534 src/back_end/pasm/pasm_lib_t.o
+ .rodata        0x000000000805cdd0      0x1ee src/back_end/ins/i386/ins_main.o
+ *fill*         0x000000000805cfbe        0x2 00
+ .rodata        0x000000000805cfc0      0x4e6 src/back_end/ins/i386/ins_lib.o
+ *fill*         0x000000000805d4a6        0x2 00
+ .rodata        0x000000000805d4a8      0x6ac src/back_end/ins/i386/ins_lib_t.o
+ .rodata        0x000000000805db54      0x798 src/back_end/ins/i386/ins_lib_1.o
+ .rodata        0x000000000805e2ec      0x26a src/back_end/ins/i386/ins_update.o
+ *fill*         0x000000000805e556        0x2 00
+ .rodata        0x000000000805e558      0x4c7 src/back_end/mcode/mcode_main.o
+ *fill*         0x000000000805ea1f        0x1 00
+ .rodata        0x000000000805ea20       0xc4 src/back_end/mcode/mcode_file.o
+ .rodata        0x000000000805eae4       0x53 src/back_end/mcode/mcode_lib.o
+ *fill*         0x000000000805eb37        0x1 00
+ .rodata        0x000000000805eb38       0xc2 src/lib/elf/elf.o
+ *fill*         0x000000000805ebfa        0x2 00
+ .rodata        0x000000000805ebfc      0x168 src/lib/elf/elf_lib.o
+ .rodata        0x000000000805ed64       0xdc dst/dnasm.a(lib.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x000000000805ee40     0x28f8
+ *(.eh_frame)
+ .eh_frame      0x000000000805ee40       0x3c /usr/lib/i386-linux-gnu/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000805ee7c       0x64 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x7c (size before relaxing)
+ .eh_frame      0x000000000805eee0        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .eh_frame      0x000000000805eee4       0x40 src/main/main.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000805ef24      0x1c8 src/front_end/symbol/symbol_main.o
+                                        0x1e0 (size before relaxing)
+ .eh_frame      0x000000000805f0ec       0xc0 src/pre/pre_main.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x000000000805f1ac       0x20 src/pre/lex/pre_lex_char_state_tab.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000805f1cc       0xa4 src/front_end/lex/lex_main.o
+                                         0xbc (size before relaxing)
+ .eh_frame      0x000000000805f270       0x20 src/front_end/lex/lex_char_state_tab.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000805f290       0xa4 src/front_end/lex/lex_lib.o
+                                         0xbc (size before relaxing)
+ .eh_frame      0x000000000805f334       0x40 src/front_end/parse/parse_main.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x000000000805f374       0x20 src/front_end/parse/parse_production_tab.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000805f394      0x520 src/front_end/parse/parse_func.o
+                                        0x538 (size before relaxing)
+ .eh_frame      0x000000000805f8b4       0x20 src/front_end/semantics/seman_main.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000805f8d4      0x128 src/front_end/semantics/seman_type.o
+                                        0x140 (size before relaxing)
+ .eh_frame      0x000000000805f9fc       0xf8 src/mid_end/frame/var.o
+                                        0x110 (size before relaxing)
+ .eh_frame      0x000000000805faf4      0x420 src/mid_end/ir/ir_list.o
+                                        0x438 (size before relaxing)
+ .eh_frame      0x000000000805ff14      0x100 src/mid_end/ir/ir_list_lib.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000008060014      0x1b0 src/back_end/pasm/pasm_main.o
+                                        0x1c8 (size before relaxing)
+ .eh_frame      0x00000000080601c4       0xe0 src/back_end/pasm/pasm_lib.o
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x00000000080602a4       0xd0 src/back_end/pasm/pasm_lib_t.o
+                                         0xe8 (size before relaxing)
+ .eh_frame      0x0000000008060374      0x140 src/back_end/ins/i386/ins_main.o
+                                        0x158 (size before relaxing)
+ .eh_frame      0x00000000080604b4      0x2c0 src/back_end/ins/i386/ins_lib.o
+                                        0x2d8 (size before relaxing)
+ .eh_frame      0x0000000008060774      0x3c0 src/back_end/ins/i386/ins_lib_t.o
+                                        0x3d8 (size before relaxing)
+ .eh_frame      0x0000000008060b34      0x380 src/back_end/ins/i386/ins_lib_1.o
+                                        0x398 (size before relaxing)
+ .eh_frame      0x0000000008060eb4      0x180 src/back_end/ins/i386/ins_update.o
+                                        0x198 (size before relaxing)
+ .eh_frame      0x0000000008061034       0xc0 src/back_end/mcode/mcode_main.o
+                                         0xd8 (size before relaxing)
+ .eh_frame      0x00000000080610f4      0x2e0 src/back_end/mcode/mcode_file.o
+                                        0x2f8 (size before relaxing)
+ .eh_frame      0x00000000080613d4       0x40 src/back_end/mcode/mcode_lib.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000008061414       0x40 src/lib/elf/elf.o
+                                         0x58 (size before relaxing)
+ .eh_frame      0x0000000008061454      0x100 src/lib/elf/elf_lib.o
+                                        0x118 (size before relaxing)
+ .eh_frame      0x0000000008061554      0x1e4 dst/dnasm.a(lib.o)
+                                        0x1fc (size before relaxing)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x0000000008061738                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000008062738                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000008062738        0x0
+                0x0000000008062738                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000008062738                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008062738        0x0
+                0x0000000008062738                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000008062738                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008062738        0x0
+                0x0000000008062738                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000008062738                PROVIDE (__fini_array_end, .)
+
+.ctors          0x0000000008062738        0x8
+ *crtbegin.o(.ctors)
+ .ctors         0x0000000008062738        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x000000000806273c        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+
+.dtors          0x0000000008062740        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x0000000008062740        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x0000000008062744        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+                0x0000000008062744                __DTOR_END__
+
+.jcr            0x0000000008062748        0x4
+ *(.jcr)
+ .jcr           0x0000000008062748        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .jcr           0x0000000008062748        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x000000000806274c       0xc8
+ *(.dynamic)
+ .dynamic       0x000000000806274c       0xc8 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000806274c                _DYNAMIC
+
+.got            0x0000000008062814        0x4
+ *(.got)
+ .got           0x0000000008062814        0x4 /usr/lib/i386-linux-gnu/crt1.o
+ *(.igot)
+                0x0000000008062818                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x0000000008062818       0x38
+ *(.got.plt)
+ .got.plt       0x0000000008062818       0x38 /usr/lib/i386-linux-gnu/crt1.o
+                0x0000000008062818                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+
+.data           0x0000000008062860     0x30b4
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000008062860        0x4 /usr/lib/i386-linux-gnu/crt1.o
+                0x0000000008062860                data_start
+                0x0000000008062860                __data_start
+ .data          0x0000000008062864        0x0 /usr/lib/i386-linux-gnu/crti.o
+ .data          0x0000000008062864        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+                0x0000000008062864                __dso_handle
+ .data          0x0000000008062868        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x0000000008062868        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .data          0x0000000008062868        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .data          0x0000000008062868        0x0 src/main/main.o
+ .data          0x0000000008062868        0x0 src/front_end/symbol/symbol_main.o
+ .data          0x0000000008062868       0x10 src/pre/pre_main.o
+ .data          0x0000000008062878        0x0 src/pre/lex/pre_lex_char_state_tab.o
+ *fill*         0x0000000008062878        0x8 00
+ .data          0x0000000008062880      0xad4 src/front_end/lex/lex_main.o
+ .data          0x0000000008063354        0x0 src/front_end/lex/lex_char_state_tab.o
+ *fill*         0x0000000008063354        0xc 00
+ .data          0x0000000008063360      0x6f4 src/front_end/lex/lex_lib.o
+ .data          0x0000000008063a54        0x0 src/front_end/parse/parse_main.o
+ .data          0x0000000008063a54        0x0 src/front_end/parse/parse_production_tab.o
+ .data          0x0000000008063a54        0x0 src/front_end/parse/parse_lib.o
+ *fill*         0x0000000008063a54        0xc 00
+ .data          0x0000000008063a60      0xb40 src/front_end/parse/parse_func.o
+ .data          0x00000000080645a0        0x0 src/front_end/semantics/seman_lib.o
+ .data          0x00000000080645a0        0x0 src/front_end/semantics/seman_main.o
+ .data          0x00000000080645a0        0x0 src/front_end/semantics/seman_type.o
+ .data          0x00000000080645a0        0x0 src/mid_end/frame/frame_main.o
+ .data          0x00000000080645a0        0x0 src/mid_end/frame/var.o
+ .data          0x00000000080645a0        0x0 src/mid_end/ir/ir_list.o
+ .data          0x00000000080645a0      0x8bc src/mid_end/ir/ir_list_lib.o
+ *fill*         0x0000000008064e5c        0x4 00
+ .data          0x0000000008064e60      0x798 src/back_end/pasm/pasm_main.o
+                0x00000000080655f4                val_id
+ .data          0x00000000080655f8        0x0 src/back_end/pasm/pasm_lib.o
+ *fill*         0x00000000080655f8        0x8 00
+ .data          0x0000000008065600      0x17c src/back_end/pasm/pasm_lib_t.o
+ .data          0x000000000806577c        0x0 src/back_end/ins/i386/ins_main.o
+ *fill*         0x000000000806577c        0x4 00
+ .data          0x0000000008065780       0x40 src/back_end/ins/i386/ins_lib.o
+ .data          0x00000000080657c0        0x0 src/back_end/ins/i386/ins_lib_t.o
+ .data          0x00000000080657c0        0x0 src/back_end/ins/i386/ins_lib_1.o
+ .data          0x00000000080657c0        0x0 src/back_end/ins/i386/ins_update.o
+ .data          0x00000000080657c0      0x154 src/back_end/mcode/mcode_main.o
+ .data          0x0000000008065914        0x0 src/back_end/mcode/mcode_file.o
+ .data          0x0000000008065914        0x0 src/back_end/mcode/mcode_lib.o
+ .data          0x0000000008065914        0x0 src/lib/elf/elf.o
+ .data          0x0000000008065914        0x0 src/lib/elf/elf_lib.o
+ .data          0x0000000008065914        0x0 dst/dnasm.a(lib.o)
+
+.data1
+ *(.data1)
+                0x0000000008065914                _edata = .
+                0x0000000008065914                PROVIDE (edata, .)
+                0x0000000008065914                __bss_start = .
+
+.bss            0x0000000008065920    0x15318
+ *(.dynbss)
+ .dynbss        0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x0000000008065920        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ .bss           0x0000000008065920        0x0 /usr/lib/i386-linux-gnu/crti.o
+ .bss           0x0000000008065920        0x8 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .bss           0x0000000008065928        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x0000000008065928        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .bss           0x0000000008065928        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .bss           0x0000000008065928        0x0 src/main/main.o
+ *fill*         0x0000000008065928       0x18 00
+ .bss           0x0000000008065940     0x60f8 src/front_end/symbol/symbol_main.o
+ .bss           0x000000000806ba38        0x0 src/pre/pre_main.o
+ *fill*         0x000000000806ba38        0x8 00
+ .bss           0x000000000806ba40      0x800 src/pre/lex/pre_lex_char_state_tab.o
+ .bss           0x000000000806c240        0x0 src/front_end/lex/lex_main.o
+ .bss           0x000000000806c240     0x2c00 src/front_end/lex/lex_char_state_tab.o
+ .bss           0x000000000806ee40        0x0 src/front_end/lex/lex_lib.o
+ .bss           0x000000000806ee40      0x33c src/front_end/parse/parse_main.o
+ .bss           0x000000000806f17c        0x0 src/front_end/parse/parse_production_tab.o
+ .bss           0x000000000806f17c        0x0 src/front_end/parse/parse_lib.o
+ .bss           0x000000000806f17c        0x0 src/front_end/parse/parse_func.o
+ .bss           0x000000000806f17c        0x0 src/front_end/semantics/seman_lib.o
+ .bss           0x000000000806f17c        0x0 src/front_end/semantics/seman_main.o
+ .bss           0x000000000806f17c        0x0 src/front_end/semantics/seman_type.o
+ .bss           0x000000000806f17c        0x0 src/mid_end/frame/frame_main.o
+ .bss           0x000000000806f17c        0x0 src/mid_end/frame/var.o
+ *fill*         0x000000000806f17c        0x4 00
+ .bss           0x000000000806f180       0x40 src/mid_end/ir/ir_list.o
+ .bss           0x000000000806f1c0        0x0 src/mid_end/ir/ir_list_lib.o
+ .bss           0x000000000806f1c0        0xd src/back_end/pasm/pasm_main.o
+                0x000000000806f1c0                pname
+                0x000000000806f1c4                val_addr
+                0x000000000806f1c8                val_len
+                0x000000000806f1cc                flg_abop
+ *fill*         0x000000000806f1cd        0x3 00
+ .bss           0x000000000806f1d0        0x0 src/back_end/pasm/pasm_lib.o
+ .bss           0x000000000806f1d0        0x0 src/back_end/pasm/pasm_lib_t.o
+ .bss           0x000000000806f1d0        0x0 src/back_end/ins/i386/ins_main.o
+ *fill*         0x000000000806f1d0       0x10 00
+ .bss           0x000000000806f1e0       0x80 src/back_end/ins/i386/ins_lib.o
+ .bss           0x000000000806f260        0x0 src/back_end/ins/i386/ins_lib_t.o
+ .bss           0x000000000806f260        0x0 src/back_end/ins/i386/ins_lib_1.o
+ .bss           0x000000000806f260        0x0 src/back_end/ins/i386/ins_update.o
+ .bss           0x000000000806f260      0x228 src/back_end/mcode/mcode_main.o
+ .bss           0x000000000806f488        0x1 src/back_end/mcode/mcode_file.o
+ *fill*         0x000000000806f489        0x3 00
+ .bss           0x000000000806f48c        0x0 src/back_end/mcode/mcode_lib.o
+ .bss           0x000000000806f48c        0x0 src/lib/elf/elf.o
+ .bss           0x000000000806f48c        0x0 src/lib/elf/elf_lib.o
+ .bss           0x000000000806f48c        0x0 dst/dnasm.a(lib.o)
+ *(COMMON)
+ COMMON         0x000000000806f48c        0x8 src/main/main.o
+                0x000000000806f48c                fr
+                0x000000000806f490                fw
+ *fill*         0x000000000806f494        0xc 00
+ COMMON         0x000000000806f4a0     0xb540 src/front_end/symbol/symbol_main.o
+                0x000000000806f4a0                p_symtbl
+                0x000000000806f4a4                g_var_id
+                0x000000000806f4a8                parse_production
+                0x000000000806f4ac                flg_extern_g
+                0x000000000806f4b0                p_cur_token
+                0x000000000806f4b4                p_tmp_token
+                0x000000000806f4b8                p_lex_char_state_tab
+                0x000000000806f4bc                p_stack
+                0x000000000806f4c0                p_word
+                0x000000000806f4c4                lex_char_state
+                0x000000000806f4c8                p_parse_production_tab
+                0x000000000806f4cc                old_token
+                0x000000000806f4d0                sym_id
+                0x000000000806f4d4                flg_cmpcond_g
+                0x000000000806f4d8                token
+                0x000000000806f4e0                sym_t
+                0x000000000806f5c8                p_pre_token
+                0x000000000806f5cc                p_queue
+                0x000000000806f5d0                postfix_var_len
+                0x000000000806f5d4                flg_abop_g
+                0x000000000806f5d5                flg_global_g
+                0x000000000806f5e0                parse_production_tab
+ COMMON         0x000000000807a9e0        0xc src/pre/pre_main.o
+                0x000000000807a9e0                pre_lex_char_state
+                0x000000000807a9e4                pre_lex_token
+                0x000000000807a9e8                p_pre_lex_char_state_tab
+ *fill*         0x000000000807a9ec       0x14 00
+ COMMON         0x000000000807aa00       0x54 src/front_end/lex/lex_lib.o
+                0x000000000807aa00                tokenlist
+ COMMON         0x000000000807aa54       0x28 src/front_end/parse/parse_func.o
+                0x000000000807aa54                cur_file
+                0x000000000807aa58                label_id
+                0x000000000807aa5c                pvarlist
+                0x000000000807aa60                g_var_addr_offset
+                0x000000000807aa64                type_id_selfdef
+                0x000000000807aa68                cur_explist
+                0x000000000807aa6c                cur_sts
+                0x000000000807aa70                cur_stslist
+                0x000000000807aa74                cur_var
+                0x000000000807aa78                p_typelist
+ *fill*         0x000000000807aa7c        0x4 00
+ COMMON         0x000000000807aa80       0x54 src/front_end/semantics/seman_type.o
+                0x000000000807aa80                typelist
+ *fill*         0x000000000807aad4        0xc 00
+ COMMON         0x000000000807aae0       0x5c src/mid_end/frame/var.o
+                0x000000000807aae0                varlist
+ *fill*         0x000000000807ab3c        0x4 00
+ COMMON         0x000000000807ab40       0xc0 src/back_end/pasm/pasm_main.o
+                0x000000000807ab40                pcur_file
+                0x000000000807ab60                pe_t
+ COMMON         0x000000000807ac00       0x38 src/back_end/ins/i386/ins_main.o
+                0x000000000807ac00                reltab_offset
+                0x000000000807ac04                sts_kind
+                0x000000000807ac08                cur_blocklist
+                0x000000000807ac0c                ins_data_offset
+                0x000000000807ac10                cur_block
+                0x000000000807ac14                strl
+                0x000000000807ac18                gcurfile
+                0x000000000807ac1c                symtab_offset
+                0x000000000807ac20                ins_code_offset
+                0x000000000807ac24                strtab_offset
+                0x000000000807ac28                rell
+                0x000000000807ac2c                esyml
+                0x000000000807ac30                dbl
+                0x000000000807ac34                icur_file
+                0x000000000807ac38                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000000807ac38                . = ALIGN (0x4)
+                0x000000000807ac38                . = ALIGN (0x4)
+                0x000000000807ac38                _end = .
+                0x000000000807ac38                PROVIDE (end, .)
+                0x000000000807ac38                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .comment       0x0000000000000000       0x2b src/main/main.o
+ .comment       0x0000000000000000       0x2b src/front_end/symbol/symbol_main.o
+ .comment       0x0000000000000000       0x2b src/pre/pre_main.o
+ .comment       0x0000000000000000       0x2b src/pre/lex/pre_lex_char_state_tab.o
+ .comment       0x0000000000000000       0x2b src/front_end/lex/lex_main.o
+ .comment       0x0000000000000000       0x2b src/front_end/lex/lex_char_state_tab.o
+ .comment       0x0000000000000000       0x2b src/front_end/lex/lex_lib.o
+ .comment       0x0000000000000000       0x2b src/front_end/parse/parse_main.o
+ .comment       0x0000000000000000       0x2b src/front_end/parse/parse_production_tab.o
+ .comment       0x0000000000000000       0x2b src/front_end/parse/parse_lib.o
+ .comment       0x0000000000000000       0x2b src/front_end/parse/parse_func.o
+ .comment       0x0000000000000000       0x2b src/front_end/semantics/seman_lib.o
+ .comment       0x0000000000000000       0x2b src/front_end/semantics/seman_main.o
+ .comment       0x0000000000000000       0x2b src/front_end/semantics/seman_type.o
+ .comment       0x0000000000000000       0x2b src/mid_end/frame/frame_main.o
+ .comment       0x0000000000000000       0x2b src/mid_end/frame/var.o
+ .comment       0x0000000000000000       0x2b src/mid_end/ir/ir_list.o
+ .comment       0x0000000000000000       0x2b src/mid_end/ir/ir_list_lib.o
+ .comment       0x0000000000000000       0x2b src/back_end/pasm/pasm_main.o
+ .comment       0x0000000000000000       0x2b src/back_end/pasm/pasm_lib.o
+ .comment       0x0000000000000000       0x2b src/back_end/pasm/pasm_lib_t.o
+ .comment       0x0000000000000000       0x2b src/back_end/ins/i386/ins_main.o
+ .comment       0x0000000000000000       0x2b src/back_end/ins/i386/ins_lib.o
+ .comment       0x0000000000000000       0x2b src/back_end/ins/i386/ins_lib_t.o
+ .comment       0x0000000000000000       0x2b src/back_end/ins/i386/ins_lib_1.o
+ .comment       0x0000000000000000       0x2b src/back_end/ins/i386/ins_update.o
+ .comment       0x0000000000000000       0x2b src/back_end/mcode/mcode_main.o
+ .comment       0x0000000000000000       0x2b src/back_end/mcode/mcode_file.o
+ .comment       0x0000000000000000       0x2b src/back_end/mcode/mcode_lib.o
+ .comment       0x0000000000000000       0x2b src/lib/elf/elf.o
+ .comment       0x0000000000000000       0x2b src/lib/elf/elf_lib.o
+ .comment       0x0000000000000000       0x2b dst/dnasm.a(lib.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(dst/dnasm elf32-i386)

@@ -1,0 +1,548 @@
+
+-------------------------------------------------------------------------
+	dld main
+-------------------------------------------------------------------------
+4) src/temp/start.o
+open file src/temp/start.o successfully !!! 
+
+	-- dbtablist_build  -- 
+	-- dld_add2objlist  -- 
+5) src/temp/test.o
+open file src/temp/test.o successfully !!! 
+
+	-- dbtablist_build  -- 
+	-- dld_add2objlist  -- 
+6) dst/printf.o
+open file dst/printf.o successfully !!! 
+
+	-- dbtablist_build  -- 
+	-- dld_add2objlist  -- 
+7) dst/write.o
+open file dst/write.o successfully !!! 
+
+	-- dbtablist_build  -- 
+	-- dld_add2objlist  -- 
+8) dst/lib.o
+open file dst/lib.o successfully !!! 
+
+	-- dbtablist_build  -- 
+	-- dld_add2objlist  -- 
+9) dst/liba.o
+open file dst/liba.o successfully !!! 
+
+	-- dbtablist_build  -- 
+	-- dld_add2objlist  -- 
+==================================================================
+	elf_header_build
+==================================================================
+add program header(text)(file_offset=0x885ead8, vir_offset)
+==================================================================
+	program_header_build
+==================================================================
+add program header(text)(file_offset=0x1000, vir_offset)
+==================================================================
+	program_header_build
+==================================================================
+add program header(text)(file_offset=0x1830, vir_offset)
+==================================================================
+	program_header_build
+==================================================================
+add section_null header(file_offset=0xf4)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_text header(file_offset=0x11c)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_data header(file_offset=0x144)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_bss header(file_offset=0x16c)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_rodata header(file_offset=0x194)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_reltext header(file_offset=0x1bc)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_shstrtab header(file_offset=0x1e4)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_symtab header(file_offset=0x20c)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_strtab header(file_offset=0x234, strtab_offset=0x0)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_comment header(file_offset=0x25c)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_eh_frame header(file_offset=0x284)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_rel_eh_frame header(file_offset=0x2ac)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+add section_note_gnu_stack header(file_offset=0x2d4)
+==================================================================
+	section_header_build
+==================================================================
+==================================================================
+	section_copy
+==================================================================
+open file src/temp/start.o successfully
+open file for relocated process successfully(src/temp/start.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(src/temp/start.o) !!! 
+
+chk_start::true, p=_start, g=_start!!!
+
+open file for relocated process successfully(src/temp/start.o) !!! 
+
+chk_start::false, p=L0, g=_start!!!
+
+open file src/temp/test.o successfully
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=printi, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=printcr, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=L6, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=L5, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=L4, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=temp_val, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=L1, g=_start!!!
+
+open file for relocated process successfully(src/temp/test.o) !!! 
+
+chk_start::false, p=L0, g=_start!!!
+
+open file dst/printf.o successfully
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=printf.c, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=prints, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=printf_exec, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=clear_buf, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=i2s, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=strlen, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=strcopy, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=i2h, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=dcc_ex_write, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=printi, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=empty_buf, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=h2s_a, g=_start!!!
+
+open file for relocated process successfully(dst/printf.o) !!! 
+
+chk_start::false, p=printcr, g=_start!!!
+
+open file dst/write.o successfully
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=src/lib/ex/write.asm, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=NR_WRITE, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=STDOUTPUT, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=strmsg, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=len, g=_start!!!
+
+open file for relocated process successfully(dst/write.o) !!! 
+
+chk_start::false, p=dcc_ex_write, g=_start!!!
+
+open file dst/lib.o successfully
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=lib.c, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=empty_buf, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=strcopy, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=strcpy, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=memcpy, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=strlen, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=strcmp, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=s2i, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=squ, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=c2i, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=i2s, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=push_t, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=h2s, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=i2h, g=_start!!!
+
+open file for relocated process successfully(dst/lib.o) !!! 
+
+chk_start::false, p=clear_buf, g=_start!!!
+
+open file dst/liba.o successfully
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=src/lib/liba.asm, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=strlen_a.1, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=strlen_a.3, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=empty_buf_a.1, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=h2s_a.1, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=h2s_a.2, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=h2s_a.3, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=h2s_a.4, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=h2s_a.5, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=strlen_a, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=empty_buf_a, g=_start!!!
+
+open file for relocated process successfully(dst/liba.o) !!! 
+
+chk_start::false, p=h2s_a, g=_start!!!
+
+open file for relocated process successfully(src/temp/test) !!! 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885ee18, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885ee58, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885ee78, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885ee98, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885eeb8, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885eed8, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885ef18, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885ef78, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885efb8, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885efd8, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+	-- offsetlist_build(s)  -- 
+
+	-- offsetlist_build(e)  -- 
+
+	-- dld_add2offsetlist(s)  dst=0x885f018, dst->tail=0x0-- 
+
+	-- dld_add2offsetlist(e)  -- 
+
+open file for relocated process successfully(src/temp/test) !!! 
+
+open file for relocated process successfully(src/temp/test) !!! 
+

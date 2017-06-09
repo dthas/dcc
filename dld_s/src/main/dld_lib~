@@ -1,0 +1,278 @@
+//===========================================================================
+// dld_lib.c
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@hotmail.com>
+//
+//This file is part of DTHAS_DLD.
+//
+//DTHAS_DLD is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTHAS_DLD is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+#include	"dld_global.h"
+#include	"dld_type.h"
+#include	<stdio.h>
+#include	"dld_main.h"
+#include	"dld_prototype.h"
+
+PRIVATE	s8 	dld_buf[TRUNK_SIZE];	//512
+PRIVATE	s8	tmp_buf[TRUNK_SIZE];	//512
+//===========================================================================
+// read_obj(s8* filename, struct objinfo_list *oi_list)
+//===========================================================================
+PUBLIC	s32	read_obj(s8* filename, struct objinfo_list *oi_list)
+{
+	//------------------------------------------------------------------
+	// declaration
+	//------------------------------------------------------------------
+	s32 i;
+	s8 *p;
+
+	//------------------------------------------------------------------
+	// file open
+	//------------------------------------------------------------------
+	fr	= fopen(filename,"r");
+
+	if(fr == NULL)
+	{
+		printf("error::can not open read file %s\n", filename);
+		exit(1);
+	}
+
+	//------------------------------------------------------------------
+	// elf info into dld_buf
+	//------------------------------------------------------------------
+	empty_buf(dld_buf, TRUNK_SIZE);
+	for(i=0; i<TRUNK_SIZE; i++)
+	{
+		fgets(dld_buf, TRUNK_SIZE, fr);
+	}
+
+	struct elf_header *elfh	= (struct elf_header*)dld_buf;
+
+	u32	section_header_offset		= elfh->section_header_offset;
+	u16	section_header_size		= elfh->section_header_size;
+	u16	section_header_num		= elfh->section_header_num;
+	u16	section_header_strtab_index	= elfh->section_header_strtab_index;
+
+	//------------------------------------------------------------------
+	// read shstrtab into tmp_buf
+	//------------------------------------------------------------------
+	u32	section_header_strtab_offset	= section_header_offset + section_header_size * section_header_strtab_index;
+
+	fseek(fr, section_header_strtab_offset, SEEK_SET);
+
+	empty_buf(tmp_buf, TRUNK_SIZE);
+	for(i=0; i<TRUNK_SIZE; i++)
+	{
+		fgets(tmp_buf, TRUNK_SIZE, fr);
+	}
+
+	//------------------------------------------------------------------
+	// read each section info into struct obj_info
+	//------------------------------------------------------------------
+	struct obj_info	*oi	= malloc(sizeof(struct obj_info));
+
+	fseek(fr, section_header_offset, SEEK_SET);
+	
+	empty_buf(dld_buf, TRUNK_SIZE);
+	for(i=0; i<TRUNK_SIZE; i++)
+	{
+		fgets(dld_buf, TRUNK_SIZE, fr);
+	}
+
+	p = dld_buf + 0;
+
+	for(i=0; (i<TRUNK_SIZE) && (i<(section_header_num * section_header_size); i+=SECTION_HEADER_SIZE, p+=SECTION_HEADER_SIZE;)
+	{
+		struct section_header *sh	= (struct section_header*)p;
+
+		//null
+		if(strcmp((tmp_buf + sh->name), "") == TRUE)
+		{
+			oi->null_info.start_addr	= 0;
+			oi->null_info.size		= 0;
+		}
+
+		//data
+		if(strcmp((tmp_buf + sh->name), ".data") == TRUE)
+		{
+			oi->data_info.start_addr	= sh->offset;
+			oi->data_info.size		= sh->size;
+		}
+
+		//text
+		if(strcmp((tmp_buf + sh->name), ".text") == TRUE)
+		{
+			oi->text_info.start_addr	= sh->offset;
+			oi->text_info.size		= sh->size;
+		}
+
+		//bss
+		if(strcmp((tmp_buf + sh->name), ".bss") == TRUE)
+		{
+			oi->bss_info.start_addr	= sh->offset;
+			oi->bss_info.size		= sh->size;
+		}
+
+		//rodata
+		if(strcmp((tmp_buf + sh->name), ".rodata") == TRUE)
+		{
+			oi->rodata_info.start_addr	= sh->offset;
+			oi->rodata_info.size		= sh->size;
+		}
+
+		//reltext
+		if(strcmp((tmp_buf + sh->name), ".reltext") == TRUE)
+		{
+			oi->reltext_info.start_addr	= sh->offset;
+			oi->reltext_info.size		= sh->size;
+		}
+
+		//shstrtab
+		if(strcmp((tmp_buf + sh->name), ".shstrtab") == TRUE)
+		{
+			oi->shstrtab_info.start_addr	= sh->offset;
+			oi->shstrtab_info.size		= sh->size;
+		}
+
+		//symtab
+		if(strcmp((tmp_buf + sh->name), ".symtab") == TRUE)
+		{
+			oi->symtab_info.start_addr	= sh->offset;
+			oi->symtab_info.size		= sh->size;
+		}
+
+		//strtab
+		if(strcmp((tmp_buf + sh->name), ".strtab") == TRUE)
+		{
+			oi->strtab_info.start_addr	= sh->offset;
+			oi->strtab_info.size		= sh->size;
+		}
+	}
+
+	struct objinfo_list *srclist	= objlist_build(oi);
+	dld_add2objlist(srclist, oi_list);
+}
+
+//===========================================================================
+// read_obj(s8* filename, struct objinfo_list *oi_list)
+//===========================================================================
+PUBLIC	s32	exe_obj(struct objinfo_list *src_list, struct objinfo_list *dst_list, struct obj_info *dsti)
+{
+	u32 addr[SECTION_NUM], size[SECTION_NUM];
+	s32 i;
+
+	struct objinfo_list *srcl	= src_list;
+
+	//------------------------------------------------------------------
+	// recompute the address and size of each section within src_list 
+	//	and output to dst_list
+	//------------------------------------------------------------------
+	i=1;
+	for(; srcl ; srcl=srcl->tail)
+	{
+		if(srcl->oinfo)
+		{
+			addr[0]	+= 0;
+			addr[1]	+= srcl->oinfo.data_info.start_addr;
+			addr[2]	+= srcl->oinfo.text_info.start_addr;
+			addr[3]	+= srcl->oinfo.bss_info.start_addr;
+			addr[4]	+= srcl->oinfo.rodata_info.start_addr;
+			addr[5]	+= srcl->oinfo.reltext_info.start_addr;
+			addr[6]	+= srcl->oinfo.shstrtab_info.start_addr;
+			addr[7]	+= srcl->oinfo.symtab_info.start_addr;
+			addr[8]	+= srcl->oinfo.strtab_info.start_addr;
+
+			size[0]	+= 0;
+			size[1]	+= srcl->oinfo.data_info.size;
+			size[2]	+= srcl->oinfo.text_info.size;
+			size[3]	+= srcl->oinfo.bss_info.size;
+			size[4]	+= srcl->oinfo.rodata_info.size;
+			size[5]	+= srcl->oinfo.reltext_info.size;
+			size[6]	+= srcl->oinfo.shstrtab_info.size;
+			size[7]	+= srcl->oinfo.symtab_info.size;
+			size[8]	+= srcl->oinfo.strtab_info.size;
+
+			struct obj_info	*oi	= malloc(sizeof(struct obj_info));
+
+			oi->null_info.addr	= addr[0];
+			oi->data_info.addr	= addr[1];
+			oi->text_info.addr	= addr[2];
+			oi->bss_info.addr	= addr[3];
+			oi->rodata_info.addr	= addr[4];
+			oi->reltext_info.addr	= addr[5];
+			oi->shstrtab_info.addr	= addr[6];
+			oi->symtab_info.addr	= addr[7];
+			oi->strtab_info.addr	= addr[8];
+
+			oi->null_info.size	= size[0];
+			oi->data_info.size	= size[1];
+			oi->text_info.size	= size[2];
+			oi->bss_info.size	= size[3];
+			oi->rodata_info.size	= size[4];
+			oi->reltext_info.size	= size[5];
+			oi->shstrtab_info.size	= size[6];
+			oi->symtab_info.size	= size[7];
+			oi->strtab_info.size	= size[8];
+
+			struct objinfo_list *srclist	= objlist_build(oi);
+			dld_add2objlist(srclist, dst_list);
+		}
+	}
+
+	//------------------------------------------------------------------
+	// fill in the summary infomation 
+	//------------------------------------------------------------------
+	dsti->null_info.addr	= addr[0];
+	dsti->data_info.addr	= addr[1];
+	dsti->text_info.addr	= addr[2];
+	dsti->bss_info.addr	= addr[3];
+	dsti->rodata_info.addr	= addr[4];
+	dsti->reltext_info.addr	= addr[5];
+	dsti->shstrtab_info.addr= addr[6];
+	dsti->symtab_info.addr	= addr[7];
+	dsti->strtab_info.addr	= addr[8];
+
+	dsti->null_info.size	= size[0];
+	dsti->data_info.size	= size[1];
+	dsti->text_info.size	= size[2];
+	dsti->bss_info.size	= size[3];
+	dsti->rodata_info.size	= size[4];
+	dsti->reltext_info.size	= size[5];
+	dsti->shstrtab_info.size= size[6];
+	dsti->symtab_info.size	= size[7];
+	dsti->strtab_info.size	= size[8];
+	
+}
+
+//===========================================================================
+// output_obj(struct objinfo_list *src_list, struct objinfo_list *dst_list, struct obj_info *dsti)
+//===========================================================================
+PUBLIC	s32	output_obj(struct objinfo_list *src_list, struct objinfo_list *dst_list, struct obj_info *dsti)
+{
+	//------------------------------------------------------------------
+	// declaration
+	//------------------------------------------------------------------
+	s8 output_file[]	= "src/temp/test";
+
+	//------------------------------------------------------------------
+	// file open
+	//------------------------------------------------------------------
+	fw	= fopen(output_file,"w");
+
+	if(fw == NULL)
+	{
+		printf("error::can not open write file %s\n", output_file);
+		exit(1);
+	}
+}

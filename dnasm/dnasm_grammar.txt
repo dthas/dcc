@@ -1,0 +1,182 @@
+primary_expression
+	: IDENTIFIER
+	| CONSTANT
+	| STRING_LITERAL
+	;
+
+postfix_expression
+	: primary_expression
+	| postfix_expression '[' expression ']'
+	;
+
+multiplicative_expression
+	: postfix_expression
+	| multiplicative_expression '*' postfix_expression
+	| multiplicative_expression '/' postfix_expression
+	| multiplicative_expression '%' postfix_expression
+	;
+
+additive_expression
+	: multiplicative_expression
+	| additive_expression '+' multiplicative_expression
+	| additive_expression '-' multiplicative_expression
+	;
+
+expression
+	: additive_expression
+	| expression ',' additive_expression
+	;
+
+constant_expression
+	: additive_expression
+	;
+
+declaration_list
+	: declaration
+	| declaration_list declaration
+	;
+
+declaration
+	: declaration_specifiers declarator
+	;
+
+declaration_specifiers
+	: storage_class_specifier
+	| type_specifier
+	| Ɛ
+	;
+
+storage_class_specifier
+	: GLOBAL
+	| EXTERN
+	;
+	
+type_specifier
+	: DB
+	| DW
+	| DD
+	| DQ
+	| DT
+	| DY
+	| RESB
+	| RESW
+	| RESQ
+	| RESY
+	;
+
+
+declarator
+	: direct_declarator
+	| direct_declarator type_specifier constant_expression
+	| direct_declarator type_specifier ''' expression '''	
+	;
+
+direct_declarator
+	: IDENTIFIER
+	| Ɛ
+	;
+
+statement
+	: mov_statement
+	| add_statement
+	| sub_statement
+	| mul_statement
+	| div_statement
+	| call_statement
+	| ret_statement
+	| jmp_statement
+	| ja_statement
+	| jb_statement
+	| je_statement
+	| jae_statement
+	| jbe_statement
+	| jne_statement
+	| push_statement
+	| pop_statement
+	| cmp_statement 
+	;
+
+statement_list
+	: statement
+	| statement_list statement
+	;
+
+mov_statement
+	: MOV expression ',' expression
+	;
+
+add_statement
+	: ADD expression ',' expression
+	;
+
+sub_statement
+	: SUB expression ',' expression
+	;
+
+mul_statement
+	: MUL expression 
+	;
+
+div_statement
+	: DIV expression 
+	;
+
+call_statement
+	: CALL expression 
+	;
+
+ret_statement
+	: RET expression 
+	;
+
+jmp_statement
+	: JMP expression 
+	;
+
+ja_statement
+	: JA expression 
+	;
+
+jb_statement
+	: JB expression 
+	;
+
+je_statement
+	: JE expression 
+	;
+
+jae_statement
+	: JAE expression 
+	;
+
+jbe_statement
+	: JBE expression 
+	;
+
+jne_statement
+	: JNE expression 
+	;
+
+push_statement
+	: PUSH expression 
+	;
+
+pop_statement
+	: POP expression 
+	;
+
+cmp_statement
+	: CMP expression ',' expression 
+	;
+
+translation_unit
+	: external_declaration
+	| translation_unit external_declaration
+	;
+
+external_declaration
+	: statement_list
+	| declaration_list
+	;
+
+

@@ -1,0 +1,593 @@
+Archive member included because of file (symbol)
+
+/usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                              /usr/lib/i386-linux-gnu/crt1.o (__libc_csu_init)
+dst/dld.a(lib.o)              src/main/dld_lib.o (empty_buf)
+dst/dld.a(elf.o)              src/main/dld_lib.o (elf_header_build)
+
+Allocating common symbols
+Common symbol       size              file
+
+dsti                0x4               src/main/main.o
+fr                  0x4               src/main/main.o
+file_offset         0x4               src/main/main.o
+elf_header_offset   0x4               src/main/main.o
+g_entry             0x14              src/main/main.o
+section_header_size
+                    0x4               src/main/main.o
+section_header_offset
+                    0x4               src/main/main.o
+strl                0x4               src/main/main.o
+vir_data_offset     0x4               src/main/main.o
+program_header_offset
+                    0x4               src/main/main.o
+symtab_offset       0x4               src/main/main.o
+dstl                0x4               src/main/main.o
+program_header_size
+                    0x4               src/main/main.o
+elf_header_size     0x4               src/main/main.o
+strtab_offset       0x4               src/main/main.o
+fw                  0x4               src/main/main.o
+rell                0x4               src/main/main.o
+section_content_offset
+                    0x4               src/main/main.o
+esyml               0x4               src/main/main.o
+sum_size_symtab     0x4               src/main/main.o
+srcl                0x4               src/main/main.o
+dbl                 0x4               src/main/main.o
+vir_offset          0x4               src/main/main.o
+
+Discarded input sections
+
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/i386-linux-gnu/crt1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crti.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/i386-linux-gnu/crti.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .group         0x0000000000000000        0x8 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .gnu_debuglink
+                0x0000000000000000        0xc /usr/lib/i386-linux-gnu/crtn.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/main/main.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/main/dld_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/main/main_lib.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/main/rel_process.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 src/main/main_lib_1.o
+ .note.GNU-stack
+                0x0000000000000000        0x0 dst/dld.a(lib.o)
+ .note.GNU-stack
+                0x0000000000000000        0x0 dst/dld.a(elf.o)
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+LOAD /usr/lib/i386-linux-gnu/crt1.o
+LOAD /usr/lib/i386-linux-gnu/crti.o
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+LOAD /usr/lib/i386-linux-gnu/libc.so
+START GROUP
+LOAD /lib/i386-linux-gnu/libc.so.6
+LOAD /usr/lib/i386-linux-gnu/libc_nonshared.a
+LOAD /lib/i386-linux-gnu/ld-linux.so.2
+END GROUP
+LOAD /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+LOAD /usr/lib/i386-linux-gnu/crtn.o
+LOAD src/main/main.o
+LOAD src/main/dld_lib.o
+LOAD src/main/main_lib.o
+LOAD src/main/rel_process.o
+LOAD src/main/main_lib_1.o
+LOAD dst/dld.a
+                0x0000000008048000                PROVIDE (__executable_start, 0x8048000)
+                0x0000000008048114                . = (0x8048000 + SIZEOF_HEADERS)
+
+.interp         0x0000000008048114       0x13
+ *(.interp)
+ .interp        0x0000000008048114       0x13 /usr/lib/i386-linux-gnu/crt1.o
+
+.note.ABI-tag   0x0000000008048128       0x20
+ .note.ABI-tag  0x0000000008048128       0x20 /usr/lib/i386-linux-gnu/crt1.o
+
+.note.gnu.build-id
+ *(.note.gnu.build-id)
+
+.hash           0x0000000008048148       0x54
+ *(.hash)
+ .hash          0x0000000008048148       0x54 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.hash
+ *(.gnu.hash)
+
+.dynsym         0x000000000804819c      0x100
+ *(.dynsym)
+ .dynsym        0x000000000804819c      0x100 /usr/lib/i386-linux-gnu/crt1.o
+
+.dynstr         0x000000000804829c       0x9e
+ *(.dynstr)
+ .dynstr        0x000000000804829c       0x9e /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.version    0x000000000804833a       0x20
+ *(.gnu.version)
+ .gnu.version   0x000000000804833a       0x20 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.version_d  0x000000000804835c        0x0
+ *(.gnu.version_d)
+ .gnu.version_d
+                0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+
+.gnu.version_r  0x000000000804835c       0x30
+ *(.gnu.version_r)
+ .gnu.version_r
+                0x000000000804835c       0x30 /usr/lib/i386-linux-gnu/crt1.o
+
+.rel.dyn        0x000000000804838c        0x8
+ *(.rel.init)
+ *(.rel.text .rel.text.* .rel.gnu.linkonce.t.*)
+ .rel.text      0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ *(.rel.fini)
+ *(.rel.rodata .rel.rodata.* .rel.gnu.linkonce.r.*)
+ *(.rel.data.rel.ro* .rel.gnu.linkonce.d.rel.ro.*)
+ *(.rel.data .rel.data.* .rel.gnu.linkonce.d.*)
+ *(.rel.tdata .rel.tdata.* .rel.gnu.linkonce.td.*)
+ *(.rel.tbss .rel.tbss.* .rel.gnu.linkonce.tb.*)
+ *(.rel.ctors)
+ *(.rel.dtors)
+ *(.rel.got)
+ .rel.got       0x000000000804838c        0x8 /usr/lib/i386-linux-gnu/crt1.o
+ *(.rel.bss .rel.bss.* .rel.gnu.linkonce.b.*)
+ .rel.bss       0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ *(.rel.ifunc)
+
+.rel.plt        0x0000000008048394       0x50
+ *(.rel.plt)
+ .rel.plt       0x0000000008048394       0x50 /usr/lib/i386-linux-gnu/crt1.o
+                0x00000000080483e4                PROVIDE (__rel_iplt_start, .)
+ *(.rel.iplt)
+ .rel.iplt      0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+                0x00000000080483e4                PROVIDE (__rel_iplt_end, .)
+
+.init           0x00000000080483e4       0x2e
+ *(.init)
+ .init          0x00000000080483e4       0x1f /usr/lib/i386-linux-gnu/crti.o
+                0x00000000080483e4                _init
+ .init          0x0000000008048403        0x5 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .init          0x0000000008048408        0x5 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .init          0x000000000804840d        0x5 /usr/lib/i386-linux-gnu/crtn.o
+
+.plt            0x0000000008048420       0xb0
+ *(.plt)
+ .plt           0x0000000008048420       0xb0 /usr/lib/i386-linux-gnu/crt1.o
+                0x0000000008048430                printf@@GLIBC_2.0
+                0x0000000008048440                fclose@@GLIBC_2.1
+                0x0000000008048450                fseek@@GLIBC_2.0
+                0x0000000008048460                fwrite@@GLIBC_2.0
+                0x0000000008048470                fread@@GLIBC_2.0
+                0x0000000008048480                malloc@@GLIBC_2.0
+                0x00000000080484a0                exit@@GLIBC_2.0
+                0x00000000080484b0                __libc_start_main@@GLIBC_2.0
+                0x00000000080484c0                fopen@@GLIBC_2.1
+ *(.iplt)
+ .iplt          0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+
+.text           0x00000000080484d0     0x634b
+ *(.text.unlikely .text.*_unlikely)
+ *(.text.exit .text.exit.*)
+ *(.text.startup .text.startup.*)
+ *(.text.hot .text.hot.*)
+ *(.text .stub .text.* .gnu.linkonce.t.*)
+ .text          0x00000000080484d0       0x24 /usr/lib/i386-linux-gnu/crt1.o
+                0x00000000080484d0                _start
+ .text          0x00000000080484f4        0x0 /usr/lib/i386-linux-gnu/crti.o
+ *fill*         0x00000000080484f4        0xc 90909090
+ .text          0x0000000008048500       0x83 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ *fill*         0x0000000008048583        0xd 90909090
+ .text          0x0000000008048590       0x72 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000008048590                __libc_csu_init
+                0x0000000008048600                __libc_csu_fini
+ .text.__i686.get_pc_thunk.bx
+                0x0000000008048602        0x4 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                0x0000000008048602                __i686.get_pc_thunk.bx
+ *fill*         0x0000000008048606        0xa 90909090
+ .text          0x0000000008048610       0x2a /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ *fill*         0x000000000804863a        0x2 90909090
+ .text          0x000000000804863c        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .text          0x000000000804863c      0x274 src/main/main.o
+                0x000000000804863c                main
+ .text          0x00000000080488b0     0x38ff src/main/dld_lib.o
+                0x00000000080488b0                read_obj
+                0x000000000804912e                exe_obj
+                0x0000000008049bb6                output_obj
+                0x0000000008049d75                dld_add_elf_header
+                0x0000000008049e12                dld_add_program_header
+                0x0000000008049ef9                dld_add_section_header
+                0x000000000804addc                dld_add_section_content
+ *fill*         0x000000000804c1af        0x1 90909090
+ .text          0x000000000804c1b0      0x2b2 src/main/main_lib.o
+                0x000000000804c1b0                section_copy
+                0x000000000804c255                align_16_file
+                0x000000000804c2b9                align_16_mem
+                0x000000000804c2e7                objlist_build
+                0x000000000804c349                dld_add2objlist
+                0x000000000804c38f                offsetlist_build
+                0x000000000804c3fe                dld_add2offsetlist
+ *fill*         0x000000000804c462        0x2 90909090
+ .text          0x000000000804c464      0xd4b src/main/rel_process.o
+                0x000000000804c464                section_content_symbol_rel_process
+                0x000000000804c58b                section_content_reltext_rel_process
+                0x000000000804c635                do_rel
+                0x000000000804c7dd                do_upd_symtab
+                0x000000000804ca9f                do_upd_elfstart
+                0x000000000804cbb4                chk_strtab
+                0x000000000804cd3a                do_rel_upd
+                0x000000000804ceb2                chk_start
+                0x000000000804d004                chk_symtab
+ *fill*         0x000000000804d1af        0x1 90909090
+ .text          0x000000000804d1b0      0xeee src/main/main_lib_1.o
+                0x000000000804d1b0                pr_objinfo_list
+                0x000000000804d230                pr_objinfo
+                0x000000000804d86d                pr_symtab
+                0x000000000804dabf                pr_reltext
+                0x000000000804dca8                pr_shstrtab
+                0x000000000804dea3                pr_strtab
+ *fill*         0x000000000804e09e        0x2 90909090
+ .text          0x000000000804e0a0      0x4da dst/dld.a(lib.o)
+                0x000000000804e0a0                empty_buf
+                0x000000000804e0d4                strcopy
+                0x000000000804e0fb                strcpy
+                0x000000000804e12b                memcpy
+                0x000000000804e15b                strlen
+                0x000000000804e184                strcmp
+                0x000000000804e1f3                s2i
+                0x000000000804e267                s2h
+                0x000000000804e343                c2i
+                0x000000000804e358                squ
+                0x000000000804e389                i2s
+                0x000000000804e406                h2s
+                0x000000000804e484                i2h
+                0x000000000804e503                push_t
+                0x000000000804e554                clear_buf
+ *fill*         0x000000000804e57a        0x2 90909090
+ .text          0x000000000804e57c      0x29f dst/dld.a(elf.o)
+                0x000000000804e57c                elf_header_build
+                0x000000000804e6bb                section_header_build
+                0x000000000804e774                program_header_build
+ *(.gnu.warning)
+
+.fini           0x000000000804e81c       0x1a
+ *(.fini)
+ .fini          0x000000000804e81c       0x10 /usr/lib/i386-linux-gnu/crti.o
+                0x000000000804e81c                _fini
+ .fini          0x000000000804e82c        0x5 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .fini          0x000000000804e831        0x5 /usr/lib/i386-linux-gnu/crtn.o
+                0x000000000804e836                PROVIDE (__etext, .)
+                0x000000000804e836                PROVIDE (_etext, .)
+                0x000000000804e836                PROVIDE (etext, .)
+
+.rodata         0x000000000804e838      0xf49
+ *(.rodata .rodata.* .gnu.linkonce.r.*)
+ .rodata        0x000000000804e838        0x4 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000804e838                _fp_hw
+ .rodata.cst4   0x000000000804e83c        0x4 /usr/lib/i386-linux-gnu/crt1.o
+                0x000000000804e83c                _IO_stdin_used
+ .rodata        0x000000000804e840       0xd2 src/main/main.o
+ *fill*         0x000000000804e912        0x2 00
+ .rodata        0x000000000804e914      0x3b0 src/main/dld_lib.o
+ .rodata        0x000000000804ecc4      0x16d src/main/main_lib.o
+ *fill*         0x000000000804ee31        0x3 00
+ .rodata        0x000000000804ee34       0xba src/main/rel_process.o
+ *fill*         0x000000000804eeee        0x2 00
+ .rodata        0x000000000804eef0      0x6ad src/main/main_lib_1.o
+ *fill*         0x000000000804f59d        0x3 00
+ .rodata        0x000000000804f5a0       0xdc dst/dld.a(lib.o)
+ .rodata        0x000000000804f67c      0x105 dst/dld.a(elf.o)
+
+.rodata1
+ *(.rodata1)
+
+.eh_frame_hdr
+ *(.eh_frame_hdr)
+
+.eh_frame       0x000000000804f784      0x6cc
+ *(.eh_frame)
+ .eh_frame      0x000000000804f784       0x3c /usr/lib/i386-linux-gnu/crt1.o
+                                         0x40 (size before relaxing)
+ .eh_frame      0x000000000804f7c0       0x64 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+                                         0x7c (size before relaxing)
+ .eh_frame      0x000000000804f824        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .eh_frame      0x000000000804f828       0x20 src/main/main.o
+                                         0x38 (size before relaxing)
+ .eh_frame      0x000000000804f848       0xe4 src/main/dld_lib.o
+                                         0xfc (size before relaxing)
+ .eh_frame      0x000000000804f92c       0xe0 src/main/main_lib.o
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x000000000804fa0c      0x120 src/main/rel_process.o
+                                        0x138 (size before relaxing)
+ .eh_frame      0x000000000804fb2c       0xe0 src/main/main_lib_1.o
+                                         0xf8 (size before relaxing)
+ .eh_frame      0x000000000804fc0c      0x1e4 dst/dld.a(lib.o)
+                                        0x1fc (size before relaxing)
+ .eh_frame      0x000000000804fdf0       0x60 dst/dld.a(elf.o)
+                                         0x78 (size before relaxing)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+                0x000000000804fe50                . = (ALIGN (0x1000) - ((0x1000 - .) & 0xfff))
+                0x0000000008050000                . = DATA_SEGMENT_ALIGN (0x1000, 0x1000)
+
+.eh_frame
+ *(.eh_frame)
+
+.gcc_except_table
+ *(.gcc_except_table .gcc_except_table.*)
+
+.exception_ranges
+ *(.exception_ranges .exception_ranges*)
+
+.tdata
+ *(.tdata .tdata.* .gnu.linkonce.td.*)
+
+.tbss
+ *(.tbss .tbss.* .gnu.linkonce.tb.*)
+ *(.tcommon)
+
+.preinit_array  0x0000000008050000        0x0
+                0x0000000008050000                PROVIDE (__preinit_array_start, .)
+ *(.preinit_array)
+                0x0000000008050000                PROVIDE (__preinit_array_end, .)
+
+.init_array     0x0000000008050000        0x0
+                0x0000000008050000                PROVIDE (__init_array_start, .)
+ *(SORT(.init_array.*) SORT(.ctors.*))
+ *(.init_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .ctors)
+                0x0000000008050000                PROVIDE (__init_array_end, .)
+
+.fini_array     0x0000000008050000        0x0
+                0x0000000008050000                PROVIDE (__fini_array_start, .)
+ *(SORT(.fini_array.*) SORT(.dtors.*))
+ *(.fini_array)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o *crtbegin?.o *crtbegin.o) .dtors)
+                0x0000000008050000                PROVIDE (__fini_array_end, .)
+
+.ctors          0x0000000008050000        0x8
+ *crtbegin.o(.ctors)
+ .ctors         0x0000000008050000        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ *crtbegin?.o(.ctors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .ctors)
+ *(SORT(.ctors.*))
+ *(.ctors)
+ .ctors         0x0000000008050004        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+
+.dtors          0x0000000008050008        0x8
+ *crtbegin.o(.dtors)
+ .dtors         0x0000000008050008        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ *crtbegin?.o(.dtors)
+ *(EXCLUDE_FILE(*crtend?.o *crtend.o) .dtors)
+ *(SORT(.dtors.*))
+ *(.dtors)
+ .dtors         0x000000000805000c        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+                0x000000000805000c                __DTOR_END__
+
+.jcr            0x0000000008050010        0x4
+ *(.jcr)
+ .jcr           0x0000000008050010        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .jcr           0x0000000008050010        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+
+.data.rel.ro
+ *(.data.rel.ro.local* .gnu.linkonce.d.rel.ro.local.*)
+ *(.data.rel.ro* .gnu.linkonce.d.rel.ro.*)
+
+.dynamic        0x0000000008050014       0xc8
+ *(.dynamic)
+ .dynamic       0x0000000008050014       0xc8 /usr/lib/i386-linux-gnu/crt1.o
+                0x0000000008050014                _DYNAMIC
+
+.got            0x00000000080500dc        0x4
+ *(.got)
+ .got           0x00000000080500dc        0x4 /usr/lib/i386-linux-gnu/crt1.o
+ *(.igot)
+                0x00000000080500e0                . = DATA_SEGMENT_RELRO_END (., 0xc)
+
+.got.plt        0x00000000080500e0       0x34
+ *(.got.plt)
+ .got.plt       0x00000000080500e0       0x34 /usr/lib/i386-linux-gnu/crt1.o
+                0x00000000080500e0                _GLOBAL_OFFSET_TABLE_
+ *(.igot.plt)
+ .igot.plt      0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+
+.data           0x0000000008050120      0x174
+ *(.data .data.* .gnu.linkonce.d.*)
+ .data          0x0000000008050120        0x4 /usr/lib/i386-linux-gnu/crt1.o
+                0x0000000008050120                data_start
+                0x0000000008050120                __data_start
+ .data          0x0000000008050124        0x0 /usr/lib/i386-linux-gnu/crti.o
+ .data          0x0000000008050124        0x4 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+                0x0000000008050124                __dso_handle
+ .data          0x0000000008050128        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .data          0x0000000008050128        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .data          0x0000000008050128        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .data          0x0000000008050128        0x0 src/main/main.o
+ *fill*         0x0000000008050128       0x18 00
+ .data          0x0000000008050140      0x154 src/main/dld_lib.o
+ .data          0x0000000008050294        0x0 src/main/main_lib.o
+ .data          0x0000000008050294        0x0 src/main/rel_process.o
+ .data          0x0000000008050294        0x0 src/main/main_lib_1.o
+ .data          0x0000000008050294        0x0 dst/dld.a(lib.o)
+ .data          0x0000000008050294        0x0 dst/dld.a(elf.o)
+
+.data1
+ *(.data1)
+                0x0000000008050294                _edata = .
+                0x0000000008050294                PROVIDE (edata, .)
+                0x0000000008050294                __bss_start = .
+
+.bss            0x00000000080502a0     0x14ec
+ *(.dynbss)
+ .dynbss        0x0000000000000000        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ *(.bss .bss.* .gnu.linkonce.b.*)
+ .bss           0x00000000080502a0        0x0 /usr/lib/i386-linux-gnu/crt1.o
+ .bss           0x00000000080502a0        0x0 /usr/lib/i386-linux-gnu/crti.o
+ .bss           0x00000000080502a0        0x8 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+ .bss           0x00000000080502a8        0x0 /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .bss           0x00000000080502a8        0x0 /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .bss           0x00000000080502a8        0x0 /usr/lib/i386-linux-gnu/crtn.o
+ .bss           0x00000000080502a8        0x0 src/main/main.o
+ *fill*         0x00000000080502a8       0x18 00
+ .bss           0x00000000080502c0      0xa0c src/main/dld_lib.o
+ .bss           0x0000000008050ccc        0x0 src/main/main_lib.o
+ *fill*         0x0000000008050ccc       0x14 00
+ .bss           0x0000000008050ce0      0x840 src/main/rel_process.o
+ .bss           0x0000000008051520      0x200 src/main/main_lib_1.o
+ .bss           0x0000000008051720        0x0 dst/dld.a(lib.o)
+ .bss           0x0000000008051720        0x0 dst/dld.a(elf.o)
+ *(COMMON)
+ COMMON         0x0000000008051720       0x6c src/main/main.o
+                0x0000000008051720                dsti
+                0x0000000008051724                fr
+                0x0000000008051728                file_offset
+                0x000000000805172c                elf_header_offset
+                0x0000000008051730                g_entry
+                0x0000000008051744                section_header_size
+                0x0000000008051748                section_header_offset
+                0x000000000805174c                strl
+                0x0000000008051750                vir_data_offset
+                0x0000000008051754                program_header_offset
+                0x0000000008051758                symtab_offset
+                0x000000000805175c                dstl
+                0x0000000008051760                program_header_size
+                0x0000000008051764                elf_header_size
+                0x0000000008051768                strtab_offset
+                0x000000000805176c                fw
+                0x0000000008051770                rell
+                0x0000000008051774                section_content_offset
+                0x0000000008051778                esyml
+                0x000000000805177c                sum_size_symtab
+                0x0000000008051780                srcl
+                0x0000000008051784                dbl
+                0x0000000008051788                vir_offset
+                0x000000000805178c                . = ALIGN ((. != 0x0)?0x4:0x1)
+                0x000000000805178c                . = ALIGN (0x4)
+                0x000000000805178c                . = ALIGN (0x4)
+                0x000000000805178c                _end = .
+                0x000000000805178c                PROVIDE (end, .)
+                0x000000000805178c                . = DATA_SEGMENT_END (.)
+
+.stab
+ *(.stab)
+
+.stabstr
+ *(.stabstr)
+
+.stab.excl
+ *(.stab.excl)
+
+.stab.exclstr
+ *(.stab.exclstr)
+
+.stab.index
+ *(.stab.index)
+
+.stab.indexstr
+ *(.stab.indexstr)
+
+.comment        0x0000000000000000       0x2a
+ *(.comment)
+ .comment       0x0000000000000000       0x2a /usr/lib/gcc/i686-linux-gnu/4.6.3/crtbegin.o
+                                         0x2b (size before relaxing)
+ .comment       0x0000000000000000       0x2b /usr/lib/i386-linux-gnu/libc_nonshared.a(elf-init.oS)
+ .comment       0x0000000000000000       0x2b /usr/lib/gcc/i686-linux-gnu/4.6.3/crtend.o
+ .comment       0x0000000000000000       0x2b src/main/main.o
+ .comment       0x0000000000000000       0x2b src/main/dld_lib.o
+ .comment       0x0000000000000000       0x2b src/main/main_lib.o
+ .comment       0x0000000000000000       0x2b src/main/rel_process.o
+ .comment       0x0000000000000000       0x2b src/main/main_lib_1.o
+ .comment       0x0000000000000000       0x2b dst/dld.a(lib.o)
+ .comment       0x0000000000000000       0x2b dst/dld.a(elf.o)
+
+.debug
+ *(.debug)
+
+.line
+ *(.line)
+
+.debug_srcinfo
+ *(.debug_srcinfo)
+
+.debug_sfnames
+ *(.debug_sfnames)
+
+.debug_aranges
+ *(.debug_aranges)
+
+.debug_pubnames
+ *(.debug_pubnames)
+
+.debug_info
+ *(.debug_info .gnu.linkonce.wi.*)
+
+.debug_abbrev
+ *(.debug_abbrev)
+
+.debug_line
+ *(.debug_line)
+
+.debug_frame
+ *(.debug_frame)
+
+.debug_str
+ *(.debug_str)
+
+.debug_loc
+ *(.debug_loc)
+
+.debug_macinfo
+ *(.debug_macinfo)
+
+.debug_weaknames
+ *(.debug_weaknames)
+
+.debug_funcnames
+ *(.debug_funcnames)
+
+.debug_typenames
+ *(.debug_typenames)
+
+.debug_varnames
+ *(.debug_varnames)
+
+.debug_pubtypes
+ *(.debug_pubtypes)
+
+.debug_ranges
+ *(.debug_ranges)
+
+.gnu.attributes
+ *(.gnu.attributes)
+
+/DISCARD/
+ *(.note.GNU-stack)
+ *(.gnu_debuglink)
+ *(.gnu.lto_*)
+OUTPUT(dst/dld elf32-i386)

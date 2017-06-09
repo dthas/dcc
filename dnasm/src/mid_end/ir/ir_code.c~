@@ -1,0 +1,304 @@
+//===========================================================================
+// ir_code.c
+//   Copyright (C) 2012 Free Software Foundation, Inc.
+//   Originally by ZhaoFeng Liang <zhf.liang@hotmail.com>
+//
+//This file is part of DTAHS_DCC.
+//
+//DTAHS_DCC is free software; you can redistribute it and/or modify
+//it under the terms of the GNU General Public License as published by
+//the Free Software Foundation; either version 2 of the License, or 
+//(at your option) any later version.
+//
+//DTAHS_DCC is distributed in the hope that it will be useful,
+//but WITHOUT ANY WARRANTY; without even the implied warranty of
+//MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+//GNU General Public License for more details.
+//
+//You should have received a copy of the GNU General Public License
+//along with DTHAS; If not, see <http://www.gnu.org/licenses/>.  
+//===========================================================================
+
+#include	"dcc_global.h"
+#include	"dcc_type.h"
+#include	"dcc_symtbl.h"
+#include	<stdio.h>
+#include	"dcc_main.h"
+#include	"dcc_lex_char.h"
+#include	"dcc_lex_word.h"
+#include	"dcc_parse.h"
+#include	"dcc_seman.h"
+#include	"dcc_frame.h"
+#include	"dcc_ir.h"
+#include	"dcc_prototype.h"
+
+#define	IR_DEBUG
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	ir_code_main()
+{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("-- ir_code_main -- (cur_file=0x%x)\n",cur_file);
+#endif
+//--------------------------
+
+	ir_code_file_process(cur_file);
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	ir_code_file_process(struct ir_file *f)
+{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("-- ir_code_file_process -- \n");
+#endif
+//--------------------------
+
+	for(; f; f=f->tail)
+	{
+		ir_code_stslist_process(f->stslist);
+	}
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	ir_code_stslist_process(struct ir_stslist *stslist)
+{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("-- ir_code_stslist_process -- \n");
+#endif
+//--------------------------
+
+	for(; stslist; stslist=stslist->tail)
+	{
+		ir_code_sts_process(stslist->sts);
+	}
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	ir_code_sts_process(struct ir_sts *sts)
+{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("%5s %10s (sts=0x%10x) \n","","-- ir_code_sts_process --",sts);
+#endif
+//--------------------------
+
+	if(sts)
+	{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("%5s %10s (sts_kind=%10s) \n","","----",sts_kind_info[sts->k]);
+#endif
+//--------------------------
+
+		switch(sts->k)
+		{
+			case IR_JUMP:
+				break;
+			case IR_EXP:
+				ir_code_explist_process(sts->s.exp_sts.explist);
+				break;
+		}
+	}
+}
+
+//===========================================================================
+// ir_explist_process(struct ir_explist *explist)
+//===========================================================================
+PUBLIC	void	ir_code_explist_process(struct ir_explist *explist)
+{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("%15s %10s (explist=0x%x) \n","","-- ir_code_explist_process --",explist);
+#endif
+//--------------------------
+
+
+	for(; explist; explist=explist->tail)
+	{
+		ir_code_exp_process(explist->exp);
+	}
+}
+
+
+//===========================================================================
+// ir_code_exp_process
+//===========================================================================
+PUBLIC	void	ir_code_exp_process(struct ir_exp *exp)
+{
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("%20s %10s \n","","--ir_code_exp_process --");
+#endif
+//--------------------------
+
+	struct ir_exp *t;
+	s32 num		=0;
+	u32 addr	=0;
+	u32 val		=0;
+	u32 len		=0;
+	
+	if(exp)
+	{
+
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+	printf("%25s ----(exp_kind=%s) \n","",exp_kind_info[exp->k - IR_EXPKIND_BASE]);
+#endif
+//--------------------------
+
+		switch(exp->k)
+		{
+			case IR_ABOP:
+				for(; exp->e.abop.left; exp=exp->e.abop.right)
+				{
+					switch(exp->e.abop.op)
+					{
+						case IR_PLUS:
+							return add((exp->e.abop.left)->var.var_addr, (exp->e.abop.right)->var.var_addr);
+							break;
+						default:
+							break;
+					}
+				}
+				break;
+
+			case IR_UNARY:
+				switch(exp->e.unary.op)
+				{
+					case IR_INC:
+						return add((exp->e.unary.left)->var.var_addr, (exp->e.unary.right)->var.var_addr);
+						break;
+					case IR_DEC:
+						return minus((exp->e.unary.left)->var.var_addr, (exp->e.unary.right)->var.var_addr);
+						break;
+					default:
+						break;					
+				}
+				break;
+
+			case IR_CALL:
+				call(cmd, exp->e.call.label_name, exp->e.call.ppv);
+				break;
+
+			case IR_ASSIGN:
+				
+				for(; exp; exp=exp->e.assign.val)
+				{
+					switch(exp->e.assign.op)
+					{
+						case IR_EQU:
+							move((exp->e.assign.res)->var.var_addr, ir_code_exp_process(exp->e.assign.res));
+							break;
+
+						case IR_PLUS:
+						case IR_MINUS:
+						case IR_MUL:
+						case IR_DIV:
+						case IR_MOD:
+							ir_code_exp_process(exp->e.assign.res);
+							break;
+					}
+				}
+				break;
+
+			case IR_COND:
+				jump(ir_code_exp_process(exp->e.cond.cond), 
+					(exp->e.cond.op_1)->var.var_addr, ((exp->e.cond.op_2)->e.cond.op_1)->var.var_addr);
+				break;
+
+			case IR_RELATE:
+				switch((exp->e.relate.left)->e.relate.op)
+				{
+					case IR_LOW:
+					case IR_ABOVE:
+					case IR_EQU_EQU:
+					case IR_LOW_EQU:
+					case IR_ABOVE_EQU:
+					case IR_NOT_EQU:
+						return cmp((exp->e.relate.left)->e.relate.op,
+								((exp->e.relate.left)->e.relate.left)->var.var_addr, 
+								((exp->e.relate.right)->e.relate.left)->var.var_addr);
+						break;
+					default:
+						break;
+				}
+				break;
+
+			case IR_POSTFIX:
+			
+				switch(exp->e.postfix.op)
+				{
+					case IR_STRUCT:
+						addr	= (exp->e.postfix.left)->var.var_addr;
+						len	= (exp->e.postfix.left)->var.var_len;
+						num	= 1;
+
+						return mem(addr, len, num);		
+						
+						break;
+
+					case IR_POINTER:
+						addr	= (exp->e.postfix.left)->var.var_addr;
+						len	= (exp->e.postfix.left)->var.var_len;
+						num	= 1;
+
+						return mem(addr, len, num);
+						
+						break;
+
+					case IR_ARRAY:
+						addr	= (exp->e.postfix.left)->var.var_addr;
+						len	= (exp->e.postfix.right)->var.var_len;
+						num	= *(s32*)((exp->e.postfix.right)->var.var_addr);
+						
+						return mem(addr, len, num);
+						break;
+
+					case IR_INC:
+						return add((exp->e.postfix.left)->var.var_addr, (exp->e.postfix.right)->var.var_addr);
+						break;
+
+					case IR_DEC:
+						return minus((exp->e.postfix.left)->var.var_addr, (exp->e.postfix.right)->var.var_addr);
+						break;
+
+					default:
+						break;
+				}
+				break;
+
+			default:
+				break;
+		}
+	}
+
+//--------------------------
+//test
+#ifdef	IR_DEBUG
+//	printf("\n%25s ----ir_exp_print(e) \n","");
+#endif
+//--------------------------
+}
+
+
+
+

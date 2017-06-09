@@ -1,0 +1,92 @@
+
+[BITS	32]
+global	L0
+global	L1
+extern	printi
+extern	printcr
+
+[section .data]
+;==================================================================
+;global
+;==================================================================
+
+temp_val	resb	4
+
+[section .text]
+
+;--------------------------------------------------------------
+L1:
+	push	ebp
+	mov	ebp, esp
+;--------------------------------------------------------------
+	mov	eax, dword[ebp+0x8]
+	mov	dword[ebp-0x8],eax
+
+	mov	eax,0x7
+	mov	ebx, dword[ebp-0x8]
+	add	ebx, eax
+	mov	dword[temp_val], ebx
+	mov	eax,dword[temp_val]
+	mov	dword[ebp-0x8],eax
+
+	mov	eax,0x3
+	mov	ebx, dword[ebp-0x8]
+	add	ebx, eax
+	mov	dword[temp_val], ebx
+	mov	ebx,dword[temp_val]
+	mov	dword[ebp-0xc],ebx
+
+	push	dword[ebp-0xc]
+	call	printi
+	add	esp, 4
+
+	mov	dword[temp_val], eax
+
+	push	dword[ebp-0x8]
+	call	printcr
+	add	esp, 4
+
+	mov	dword[temp_val], eax
+
+
+	mov	esp, ebp
+	pop	ebp
+	ret
+
+
+;--------------------------------------------------------------
+L0:
+	push	ebp
+	mov	ebp, esp
+;--------------------------------------------------------------
+	mov	ecx, ebp
+	sub	ecx, 0x10
+	mov	dword[ebp-0x14],ecx
+
+	mov	edx,0x1
+	mov	dword[ebp+0x8],edx
+
+	mov	esi,0x4
+	mov	dword[ebp+0xc],esi
+
+	mov	ecx, dword[ebp+0xc]
+	mov	dword[ebp-0x14+0],ecx
+
+	mov	edx, dword[ebp-0x14+0]
+	mov	ecx, dword[ebp+0x8]
+	add	ecx, edx
+	mov	dword[temp_val], ecx
+	mov	edi, dword[temp_val]
+	mov	dword[ebp-0x8],edi
+
+	push	dword[ebp-0x8]
+	call	L1
+	add	esp, 4
+
+	mov	dword[temp_val], eax
+
+
+	mov	esp, ebp
+	pop	ebp
+	ret
+
